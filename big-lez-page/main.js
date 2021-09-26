@@ -1,0 +1,62 @@
+// generate 100 stars/ SPECIFICATION:
+/* 
+height width witdh > 50% < 200% && within 10% of each other
+gridArea placement must be unique, and have relationship so they only match on mb side :)
+*/
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+}
+let starRow = () => getRandomInt(1, 90);
+let starCol = (y) =>
+  getRandomInt(
+    Math.floor(
+      (((8893 * (y - 86)) / 111622680 + 452 / 76245) * (y - 40) - 40 / 39) *
+        (y - 1) +
+        165
+    ),
+    200
+  );
+let starSize = () => getRandomInt(1, 110);
+let starColor = () => getRandomInt(0, 8);
+let variationCoeff = (per) => getRandomInt(per, 100) / 100;
+const colors = [
+  "lavender",
+  "thistle",
+  "plum",
+  "violet",
+  "orchid",
+  "fuchsia",
+  "magenta",
+  "mediumorchid",
+  "mediumpurple",
+];
+
+//((79 * (y - 40)) / 5865 - 5 / 3) * (y - 1) + 190
+let coordList = [];
+const darkSky = document.querySelector(".bg.sky");
+function starGenerator(count) {
+  for (let i = 0; i < count; i++) {
+    let newStar = document.createElement("div");
+    newStar.classList.add(`bg-star${i}`);
+    let y = starRow();
+    let x = starCol(y);
+    let size = starSize();
+    let color = starColor();
+    let V = variationCoeff(80);
+
+    coordList = [...coordList, [x, y]];
+    newStar.style.cssText = `grid-area: ${y} / ${x} / ${y} / ${x}; 
+    height: ${size * 0.87}%;
+    width: ${size}%;
+    background-color: ${colors[color]};
+    opacity: ${V * 100};
+    border-radius: 100%;
+    box-shadow: 0 0 ${1.3 * V}vh ${0.2 * V}vh ${colors[color]}; 
+  `;
+    darkSky.appendChild(newStar);
+  }
+}
+
+starGenerator(200);
