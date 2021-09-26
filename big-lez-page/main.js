@@ -33,6 +33,7 @@ const colors = [
   "mediumpurple",
 ];
 
+// STARS
 //((79 * (y - 40)) / 5865 - 5 / 3) * (y - 1) + 190
 let coordList = [];
 const darkSky = document.querySelector(".bg.sky");
@@ -51,7 +52,7 @@ function starGenerator(count) {
     height: ${size * 0.87}%;
     width: ${size}%;
     background-color: ${colors[color]};
-    opacity: ${V * 100};
+    opacity: ${V * 100}%;
     border-radius: 100%;
     box-shadow: 0 0 ${1.3 * V}vh ${0.2 * V}vh ${colors[color]}; 
   `;
@@ -59,4 +60,39 @@ function starGenerator(count) {
   }
 }
 
-starGenerator(200);
+starGenerator(300);
+
+// CLOUDS
+// root.style.setProperty("--mouse-x", e.clientX + "px");
+let cloudY = () => getRandomInt(0, 40);
+let cloudDelay = () => getRandomInt(x, y);
+const BASE_TIME = 60;
+const BASE_SCALE = 0.9;
+
+const sky = document.querySelector(".bg.rainbow");
+let index = 1;
+function cloudGenerator(count) {
+  for (let i = 1; i <= count; i++) {
+    if (index > 5) {
+      index = 1;
+    }
+    let newCloud = document.createElement("div");
+    newCloud.classList.add(`fg`, `cloud`, `x${index}`);
+    let y = cloudY();
+    let V = variationCoeff(80);
+    const ANIMATION_LENGTH = BASE_TIME + y * 1.5;
+    newCloud.style.cssText = `margin-top: ${y}%;
+    animation: animateCloud ${ANIMATION_LENGTH}s linear infinite;
+    opacity: ${V * 100 * (0.9 + 0.1 / y)}%;
+    transform: scale(${BASE_SCALE - y / 100});
+    animation-delay: -${getRandomInt(0, ANIMATION_LENGTH)}s`;
+    y > 20
+      ? (newCloud.style.backgroundPosition = "left")
+      : (newCloud.style.backgroundPosition = "right");
+    sky.prepend(newCloud);
+    index++;
+  }
+}
+cloudGenerator(35);
+
+// root.style.setProperty("--cloud-color", "");
