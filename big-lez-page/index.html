@@ -10,14 +10,30 @@
 
   <header></header>
   <body>
-    <div class="bg sky">
-      <div class="bg lb"></div>
-      <div class="bg mb"></div>
-      <div class="bg star"></div>
-    </div>
-    <div class="bg rainbow" alt="rainbow">
-      <div class="fg img" alt="fgimg"></div>
+    <div class="canvas">
+      <div class="bg sky">
+        <div class="bg lb"></div>
+        <div class="bg mb"></div>
+        <div class="bg star"></div>
+      </div>
+      <div class="bg rainbow" alt="rainbow">
+        <div class="fg img" alt="fgimg"></div>
+        <button class="bg button moon" onclick="dropdown(this.children)">
+          <div class="custom-model-main">
+            <div class="custom-model-inner">        
+            <div class="close-btn">×</div>
+                <div class="custom-model-wrap">
+                    <div class="pop-up-content-wrap">
+                       Content Here
+                    </div>
+                </div>  
+            </div>  
+            <div class="bg-overlay"></div>
+        </button>
+      </div>
     </div>
     <script src="main.js"></script>
   </body>
 </html>
+<!-- https://www.freeiconspng.com/thumbs/moon-png/moon-png-no-background-15.png -->
+<!-- https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1fafbbc6-41b8-4b54-97b6-9edcf6725560/d7t4mdm-a38e3582-7d57-417a-841f-28fd430ef47f.png/v1/fill/w_800,h_800,strp/bright_full_moon_png_by_clairesolo_d7t4mdm-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvMWZhZmJiYzYtNDFiOC00YjU0LTk3YjYtOWVkY2Y2NzI1NTYwXC9kN3Q0bWRtLWEzOGUzNTgyLTdkNTctNDE3YS04NDFmLTI4ZmQ0MzBlZjQ3Zi5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.fb7BjB3-5pSJPN1_V-A2ICDgKJyW1CQ8r3kCQVGTaWE -->
