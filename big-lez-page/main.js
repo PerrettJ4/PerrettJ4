@@ -72,6 +72,11 @@ const BASE_SCALE = 0.9;
 const sky = document.querySelector(".bg.rainbow");
 let index = 1;
 function cloudGenerator(count) {
+  // removing existing clouds
+  const clouds = document.querySelectorAll(".fg.cloud");
+  let cloudList = Array.from(clouds);
+  cloudList.forEach((cloud) => sky.removeChild(cloud));
+  // adding new clouds
   for (let i = 1; i <= count; i++) {
     if (index > 5) {
       index = 1;
@@ -85,18 +90,26 @@ function cloudGenerator(count) {
     animation: animateCloud ${ANIMATION_LENGTH}s linear infinite;
     opacity: ${V * 100 * (0.9 + 0.1 / +y)}%;
     transform: scale(${BASE_SCALE - y / 100});
-    animation-delay: -${getRandomInt(0, ANIMATION_LENGTH)}s`;
+    animation-delay: -${getRandomInt(0, ANIMATION_LENGTH)}s;
+    z-index: 2;`;
     y > 20
       ? (newCloud.style.backgroundPosition = "top left")
       : (newCloud.style.backgroundPosition = "top right");
     sky.prepend(newCloud);
     index++;
   }
+  const cloudCount = document.querySelectorAll(".fg.cloud").length;
+  console.log("clouds: ", cloudCount);
 }
-cloudGenerator(0);
+cloudGenerator(30);
 
 // Moon pop up :)
 
 function dropdown(child) {
   child[0].classList.toggle("model-open");
+}
+console.log(document.documentElement.classList);
+function invert() {
+  document.documentElement.classList.toggle("invert");
+  console.log(document.documentElement.classList);
 }
