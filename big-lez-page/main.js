@@ -18,7 +18,7 @@ let starCol = (y) =>
     ),
     200
   );
-let starSize = () => getRandomInt(1, 110);
+let starSize = () => getRandomInt(1, 80);
 let starColor = () => getRandomInt(0, 8);
 let variationCoeff = (per) => getRandomInt(per, 100) / 100;
 const colors = [
@@ -63,6 +63,8 @@ function starGenerator(count) {
   `;
     darkSky.appendChild(newStar);
   }
+  const starCount = document.querySelectorAll(".fg.star").length;
+  console.log("stars: ", starCount);
 }
 
 starGenerator(300);
@@ -113,8 +115,7 @@ cloudGenerator(30);
 function dropdown(child) {
   child[0].classList.toggle("model-open");
 }
-console.log(document.documentElement.classList);
+
 function invert() {
   document.documentElement.classList.toggle("invert");
-  console.log(document.documentElement.classList);
 }
