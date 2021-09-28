@@ -18,8 +18,8 @@
       </div>
       <div class="bg rainbow" alt="rainbow">
         <div class="fg img" alt="fgimg"></div>
-        <button class="bg button moon visible"></button>
-        <button class="bg button moon invisible" onclick="dropdown(this.children)">
+        <button class="bg moon visible"></button>
+        <button class="bg button invisible" onclick="dropdown(this.children)">
           <div class="custom-model-main">
             <div class="custom-model-inner">        
             <div class="close-btn">×</div>
@@ -29,6 +29,9 @@
                     </div>
                     <div>
                       <input type="range" id="clouds-slider" name="clouds-slider" min="0" max="50" onchange="cloudGenerator(valueAsNumber)" ><label for="clouds-slider">Clouds</label>
+                    </div>
+                    <div>
+                      <input type="range" id="stars-slider" name="stars-slider" min="50" max="1000" onchange="starGenerator(valueAsNumber)" ><label for="stars-slider">Stars</label>
                     </div>
                     <div><input type="checkbox" id="invert-check" name="invert-check" onclick="invert()"> <label for="invert-check" >Invert colors</label></div>
                 </div>  

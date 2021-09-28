@@ -38,9 +38,14 @@ const colors = [
 let coordList = [];
 const darkSky = document.querySelector(".bg.sky");
 function starGenerator(count) {
+  const stars = document.querySelectorAll(".bg.star");
+  let starsList = Array.from(stars);
+  starsList.forEach((star) => darkSky.removeChild(star));
   for (let i = 0; i < count; i++) {
+    // removing existing clouds
+    // adding new clouds
     let newStar = document.createElement("div");
-    newStar.classList.add(`bg-star${i}`);
+    newStar.classList.add(`bg`, `star`, `${i}`);
     let y = starRow();
     let x = starCol(y);
     let size = starSize();
