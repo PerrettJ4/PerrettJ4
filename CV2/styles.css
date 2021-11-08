@@ -1,0 +1,259 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: lightgray;
+  min-height: 1000px;
+}
+/*page container*/
+.allContent {
+  margin: 10px;
+  display: flex;
+  min-height: 900px;
+  position: relative;
+}
+/*part left*/
+.leftRight {
+  background-color: white;
+  width: 33%;
+  margin: 16px 5px;
+
+  box-shadow: 3px 3px 5px 4px gray;
+}
+.backboard {
+  height: 300px;
+  width: auto;
+  background-size: cover;
+  background-image: url("./spaceimage.png");
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.backboard-top {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.headings {
+  color: white;
+}
+/* IMAGE */
+.backboard-bottom {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.user-circle {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 10%;
+  height: 180px;
+  width: 180px;
+  border: 7px solid white;
+  overflow-x: clip;
+  border-radius: 100%;
+}
+.user-circle img {
+  height: 180px;
+  width: auto;
+  object-fit: cover;
+  margin-bottom: 100px;
+  object-position: -15px -4px;
+}
+.moon {
+  width: 40%;
+}
+.moon img {
+  height: 200px;
+  margin-left: 30px;
+  margin-top: 200px;
+}
+/* Skills*/
+.partOne {
+  margin: 30px 30px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.partTwo p {
+  color: gray;
+}
+.partTwo {
+  margin: 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.partTwo p {
+  color: gray;
+}
+.infolistitem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0px;
+  padding: 0px;
+}
+.fa {
+  margin-right: 10px;
+}
+i {
+  color: teal;
+  margin-right: 20px;
+  font-size: 20px;
+}
+hr {
+  color: lightgray;
+  margin: 0 30px;
+}
+.star {
+  font-size: 20px;
+}
+
+.outside {
+  background-color: lightgray;
+  border-radius: 15px;
+}
+.inside {
+  background-color: teal;
+  border-radius: 15px;
+  color: white;
+}
+#ninty {
+  width: 90%;
+}
+#eighty {
+  width: 80%;
+}
+#seventy-five {
+  width: 75%;
+}
+#seventy-one {
+  width: 71%;
+}
+#eighty-four {
+  width: 84%;
+}
+#sixty {
+  width: 60%;
+}
+#ninty {
+  width: 85%;
+}
+#one-hundred {
+  width: 100%;
+}
+#fifty-five {
+  width: 55%;
+}
+#tweny-five {
+  width: 25%;
+}
+/*part right*/
+.rightLeft {
+  width: 70%;
+  margin: -4px -8px 0 5px;
+}
+/*experience.. education*/
+.partRight {
+  background-color: white;
+  box-shadow: 3px 3px 5px 4px gray;
+}
+.com {
+  margin: 0 30px;
+}
+.com h5 {
+  color: gray;
+  font-size: 16px;
+}
+.icon {
+  margin: 20px 0 5px 0;
+  padding: 32px 0 0;
+  color: gray;
+}
+.icon i {
+  font-size: 35px;
+}
+.soc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+h6 {
+  color: teal;
+  margin: 10px 0;
+  font-size: 15px;
+}
+span {
+  color: white;
+  background-color: teal;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+.end {
+  padding-bottom: 50px;
+}
+/*footer*/
+footer {
+  color: white;
+  padding: 10px;
+  background-color: teal;
+  width: 100%;
+}
+footer i {
+  color: white;
+  margin: 0;
+}
+/*frame work*/
+.center {
+  text-align: center;
+}
+/*media quries to mall screen*/
+@media (max-width: 420px) {
+  .allContent {
+    display: block;
+  }
+  .leftRight {
+    width: 100%;
+    max-height: 1100px;
+  }
+  .rightLeft {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .allContent {
+    display: block;
+  }
+  .leftRight {
+    width: 100%;
+    max-height: 1500px;
+  }
+  .rightLeft {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}

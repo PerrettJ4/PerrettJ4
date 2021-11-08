@@ -63,7 +63,7 @@ function starGenerator(count) {
   `;
     darkSky.appendChild(newStar);
   }
-  const starCount = document.querySelectorAll(".fg.star").length;
+  const starCount = document.querySelectorAll(".bg.star").length;
   console.log("stars: ", starCount);
 }
 
