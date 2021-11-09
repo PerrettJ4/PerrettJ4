@@ -159,18 +159,15 @@ li {
   font-weight: 700;
   font-size: 15px;
   transition: 0.5s;
-  margin-top: 50px;
+  transform: translate(0px, -10px);
 }
 .card:hover .percent .number h3 {
   color: blue;
   font-size: 24px;
 }
-.percent .number h2 span {
-  font-size: 28px;
-  color: #777;
-  transition: 0.5s;
+.skill-text {
+  width: 54.38px;
 }
-
 .text {
   position: relative;
   color: #777;
