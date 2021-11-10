@@ -83,6 +83,7 @@ body {
 }
 /* PAGE */
 #page-cols {
+  margin-top: 70px;
   height: 760px;
   background-color: whitesmoke;
   display: flex;
@@ -294,4 +295,10 @@ svg circle:nth-child(2) {
 .card:nth-child(3) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 84) / 100);
   stroke: #ff04f7;
+}
+
+@media only screen and (min-width: 1050px) {
+  /* body {
+    background-color: lightblue;
+  } */
 }
