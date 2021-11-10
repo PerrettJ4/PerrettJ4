@@ -39,11 +39,29 @@ body {
   height: 50%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: end;
+}
+.heading-box {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(50px);
+}
+.heading-box.left {
+  align-items: start;
+}
+.heading-box.right {
+  align-items: end;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 .headings {
   color: white;
+  margin: 0;
+  margin-bottom: 5px;
+}
+#surname {
+  font-size: 44px;
+  margin: 0px;
 }
 /* IMAGE */
 .backboard-bottom {
@@ -84,7 +102,7 @@ body {
 /* PAGE */
 #page-cols {
   margin-top: 65px;
-  height: 900px;
+  height: 1200px;
   background-color: whitesmoke;
   display: flex;
 }
@@ -93,7 +111,7 @@ body {
   background-color: white;
 }
 .section {
-  border: white 2px solid;
+  border: black 2px solid;
 }
 .section h2 {
   font-size: 24px;
@@ -111,27 +129,34 @@ li {
   margin-top: 5px;
 }
 #profile {
-  height: 20%;
+  height: 13%;
 }
 #profile p {
   margin-top: 5px;
 }
-#work,
-#skills {
-  height: 40%;
+#education {
+  height: 29%;
 }
-#work,
+#skills {
+  height: 35%;
+}
+#hobbies {
+  height: 23%;
+}
+#education,
 #skills,
-#profile {
+#profile,
+#hobbies {
   margin-left: 12%;
   margin-right: 3%;
 }
-#education,
+
+#work,
 #contact {
   margin-right: 12%;
   margin-left: 3%;
 }
-#education {
+#work {
   height: 60%;
   transform: translateY(-10px);
 }
@@ -143,7 +168,6 @@ li {
   /* margin-top: 20px; */
 }
 /* SPAN DATE BAR */
-
 .city-container {
   display: flex;
 }
@@ -154,6 +178,7 @@ li {
   display: flex;
   border-radius: 5px;
   padding: 2px;
+  align-items: center;
 }
 #JDE {
   box-shadow: 0 0 5px burlywood;
@@ -188,6 +213,38 @@ li {
   height: 1px;
   height: 50%;
   margin: 0 10px;
+}
+/* SKILLS */
+.skill-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+.skill-row {
+  display: flex;
+  height: 17%;
+  justify-content: space-evenly;
+}
+.trait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trait-text-hold {
+  width: 77px;
+  text-align: center;
+}
+.trait h5 {
+  margin: 0;
+  text-align: center;
+}
+.trait img {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px;
+  height: 100%;
+  width: auto;
 }
 /* CONTACT */
 .contact {
