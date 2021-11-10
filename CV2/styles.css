@@ -83,6 +83,7 @@ body {
 }
 .col {
   width: 50%;
+  background-color: white;
 }
 .section {
   border: black 2px solid;
@@ -112,11 +113,63 @@ li {
 #skills,
 #profile {
   margin-left: 12%;
+  margin-right: 2%;
 }
 #education,
 #contact {
-  height: 50%;
   margin-right: 12%;
+  margin-left: 2%;
+}
+#education {
+  height: 60%;
+}
+#contact {
+  height: 40%;
+}
+/* SPAN DATE BAR */
+
+.city-container {
+  display: flex;
+}
+.date-box {
+  display: flex;
+  border-radius: 5px;
+  padding: 2px;
+  /* border: 1px black solid; */
+}
+#JDE {
+  box-shadow: 0 0 5px burlywood;
+}
+#raven {
+  box-shadow: 0 0 5px grey;
+}
+#soc {
+  box-shadow: 0 0 5px lightblue;
+}
+#bham {
+  box-shadow: 0 0 5px rgb(228, 163, 163);
+}
+#stas {
+  box-shadow: 0 0 5px rgb(97, 57, 57);
+}
+.city-container h5 {
+  margin: 0;
+  font-weight: 500;
+}
+.city-container h4 {
+  margin: 0;
+  margin-right: 20px;
+}
+.span-placement {
+  height: 20px;
+  display: flex;
+}
+.big-line {
+  border-bottom: 1px solid black;
+  width: 15px;
+  height: 1px;
+  height: 50%;
+  margin: 0 10px;
 }
 
 /* PROGRESS BARS */
