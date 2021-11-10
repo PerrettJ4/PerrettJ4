@@ -55,7 +55,7 @@ body {
 }
 .user-circle {
   position: absolute;
-  margin-left: 39%;
+  margin-left: 41%;
   margin-top: 10%;
   height: 180px;
   width: 180px;
@@ -83,8 +83,8 @@ body {
 }
 /* PAGE */
 #page-cols {
-  margin-top: 70px;
-  height: 760px;
+  margin-top: 65px;
+  height: 900px;
   background-color: whitesmoke;
   display: flex;
 }
@@ -137,6 +137,10 @@ li {
 }
 #contact {
   height: 40%;
+}
+#contact,
+#skills {
+  /* margin-top: 20px; */
 }
 /* SPAN DATE BAR */
 
