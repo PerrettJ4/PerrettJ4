@@ -58,9 +58,10 @@ body {
   color: white;
   margin: 0;
   margin-bottom: 5px;
+  font-size: 40px;
 }
 #surname {
-  font-size: 44px;
+  font-size: 55px;
   margin: 0px;
 }
 /* IMAGE */
@@ -75,18 +76,18 @@ body {
   position: absolute;
   margin-left: 41%;
   margin-top: 10%;
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 200px;
   border: 7px solid white;
   overflow-x: clip;
   border-radius: 100%;
 }
 .user-circle img {
-  height: 180px;
+  height: 110%;
   width: auto;
   object-fit: cover;
   margin-bottom: 100px;
-  object-position: -15px -4px;
+  object-position: -19px -8px;
 }
 .moon {
   width: 40%;
@@ -101,8 +102,8 @@ body {
 }
 /* PAGE */
 #page-cols {
-  margin-top: 65px;
-  height: 1200px;
+  margin-top: 58px;
+  height: 1400px;
   background-color: whitesmoke;
   display: flex;
 }
