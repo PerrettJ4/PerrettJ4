@@ -123,25 +123,27 @@ body {
 li {
   font-size: 14px;
   color: rgb(10, 10, 66);
+  margin-top: 2px;
 }
 .section ul {
   padding-left: 5%;
   margin-top: 5px;
 }
 #profile {
-  height: 13%;
+  height: 12%;
 }
 #profile p {
   margin-top: 5px;
 }
 #education {
-  height: 29%;
+  height: 27%;
 }
 #skills {
   height: 35%;
 }
 #hobbies {
   height: 23%;
+  margin-top: 10px;
 }
 #education,
 #skills,
@@ -157,11 +159,11 @@ li {
   margin-left: 3%;
 }
 #work {
-  height: 60%;
+  height: 62%;
   transform: translateY(-10px);
 }
 #contact {
-  height: 40%;
+  height: 38%;
 }
 #contact,
 #skills {
@@ -262,6 +264,33 @@ li {
   width: auto;
   margin-right: 12%;
 }
+
+/* HOBBIES */
+.single-before ul {
+  list-style-position: outside;
+}
+.single-before {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.single-before li {
+  text-indent: -1.5rem;
+}
+.single-before li:nth-child(1)::before {
+  content: "⚽ ";
+}
+.single-before li:nth-child(2)::before {
+  content: "🎵 ";
+}
+.single-before li:nth-child(3)::before {
+  content: "🎮 ";
+}
+li span {
+  position: relative;
+  left: 10px;
+}
+
 /* PROGRESS BARS */
 .container {
   position: relative;
