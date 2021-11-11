@@ -17,7 +17,9 @@ p,
 li {
   line-height: 1.6;
 }
-
+.see-website p {
+  color: red;
+}
 body {
   background-color: white;
   min-height: 1000px;
@@ -160,7 +162,7 @@ li {
   margin-left: 3%;
 }
 #work {
-  height: 65%;
+  height: 69%;
   transform: translateY(-10px);
 }
 #contact {

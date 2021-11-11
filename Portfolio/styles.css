@@ -256,6 +256,7 @@ li {
   border-radius: 50%;
   border: solid black 1px;
   margin-left: 5px;
+  transform: translate(0px, 1px);
 }
 
 .mouse:hover {
