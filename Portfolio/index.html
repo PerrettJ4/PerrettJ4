@@ -30,12 +30,12 @@
     </div>
     <div class="backboard-bottom">
       <div class='moon'>
-        <img
+        <img id='moon-button'
           src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1fafbbc6-41b8-4b54-97b6-9edcf6725560/d7t4mdm-a38e3582-7d57-417a-841f-28fd430ef47f.png/v1/fill/w_800,h_800,strp/bright_full_moon_png_by_clairesolo_d7t4mdm-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvMWZhZmJiYzYtNDFiOC00YjU0LTk3YjYtOWVkY2Y2NzI1NTYwXC9kN3Q0bWRtLWEzOGUzNTgyLTdkNTctNDE3YS04NDFmLTI4ZmQ0MzBlZjQ3Zi5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.fb7BjB3-5pSJPN1_V-A2ICDgKJyW1CQ8r3kCQVGTaWE "
-          alt="moon">
+          alt="moon" onclick='darkSideOfTheMoon()' />
       </div>
       <div class="user-circle">
-        <img src="./Me1.png" />
+        <img id='me' src="./Me1.png" />
       </div>
     </div>
   </div>
@@ -237,13 +237,15 @@
               playing youth football and currently play five-a-side every week. Each week pouring over my FPL
               team.</span></li>
           <li class='musicbullet'><span>
-              I enjoy music, specifically jazz, soul and funk. I play the guitar most days. In which I tend to dabble in
+              I enjoy music, specifically jazz, soul and funk. I play the guitar most days. In which I tend to dabble
+              in
               blues and indie pop music. It's a nice pastime.</span>
           </li>
           <li class='gamesbullet'><span>I used to play a lot of online games, from PC then through from PS1 to PS4. It
               is fun jumping into
               different realities with your mates. I hope that I can find time in the future to relax with a classic
-              game. I have worked hard over the last year. During the bootcamp I used code wars problems to pass the
+              game. I have worked hard over the last year. During the bootcamp I used <a
+                href='https://www.codewars.com/users/PerrettJ4'>Codewars</a> problems to pass the
               time as I was at home. After all I enjoy solving problems; particularily with code.</span>
           </li>
         </ul>
@@ -348,7 +350,8 @@
           <li>Reached 859 honor of <a href='https://www.codewars.com/users/PerrettJ4'>Codewars</a></li>
           <li>Built several full stack apps.</li>
           <li>Won the week 8 project utilising OAG's flights API.</li>
-          <li><u>4 week project problem statement:</u> To create an app which allows coaches to track and spot trends in
+          <li><u>4 week project problem statement:</u> To create an app which allows coaches to track and spot trends
+            in
             the
             growth of individual
             cohorts, bootcamps and students alike. While automating data collection and entry to aide SoC's
@@ -369,9 +372,10 @@
             After four days in the planning phase we began building via pair and mob
             programming.
             First, I specialised on generating the dummy data; utilising a weighted-dynamic gaussian distribution to
-            emulate students happiness, performance and engagement. I then developed the logic on both the back-end and
+            emulate students happiness, performance and engagement. I then developed the logic on both the back-end
+            and
             front-end to package the
-            data and display analysis via several graphs and tables. I deployed the back end to Heroku and was
+            data and display analysis via several graphs and tables. We deployed the back end to Heroku and was I
             vital
             in sorting out front-end
             issues regarding Tailwind and CSS in general. I
@@ -379,7 +383,7 @@
             Due to the amount of data traversing
             in this project the extra time spent on Codewars paid dividends. Finally, this project was a
             great to
-            opportunity to cement Github best practises, by branching off for a new features amd then creating a PRs.
+            opportunity to cement Github best practises, by branching off for a new features and then creating PRs.
             Utilising continuous deployment fully.</li>
         </ul>
 
