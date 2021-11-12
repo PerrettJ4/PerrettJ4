@@ -143,6 +143,7 @@ li {
 }
 #skills {
   height: 35%;
+  position: relative;
 }
 #hobbies {
   height: 23%;
@@ -168,9 +169,11 @@ li {
 #contact {
   height: 35%;
 }
-#contact,
-#skills {
-  /* margin-top: 20px; */
+#hobbies {
+  transform: translate(0, -40px);
+}
+.skill-container {
+  height: 400px;
 }
 /* SPAN DATE BAR */
 .city-container {
