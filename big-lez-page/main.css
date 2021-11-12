@@ -292,6 +292,17 @@ brightness(95%) contrast(80%); */
   color: black;
 }
 
+/* Click the Moon */
+#hideDiv {
+  background: magenta;
+  width: 400px;
+  margin: 0 auto;
+
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
 @media screen and (min-width: 800px) {
   .custom-model-main:before {
     content: "";

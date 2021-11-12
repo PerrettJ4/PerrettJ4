@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Big Lez Background</title>
-    <link rel="stylesheet" type="text/css" href="main.css" />
-  </head>
 
-  <header></header>
-  <body>
-    <div class="canvas">
-      <div class="bg sky">
-        <div class="bg lb"></div>
-        <div class="bg mb"></div>
-        <div class="bg star"></div>
-      </div>
-      <div class="bg rainbow" alt="rainbow">
-        <div class="fg img" alt="fgimg"></div>
-        <button class="bg moon visible"></button>
-        <button class="bg button invisible" onclick="dropdown(this.children)">
-          <div class="custom-model-main">
-            <div class="custom-model-inner">        
-            <div class="close-btn">×</div>
-                <div class="custom-model-wrap">
-                    <div class="pop-up-content-wrap">
-                       Content Here
-                    </div>
-                    <div>
-                      <input type="range" id="clouds-slider" name="clouds-slider" min="0" max="100" onchange="cloudGenerator(valueAsNumber)" ><label for="clouds-slider">Clouds</label>
-                    </div>
-                    <div>
-                      <input type="range" id="stars-slider" name="stars-slider" min="50" max="2000" onchange="starGenerator(valueAsNumber)" ><label for="stars-slider">Stars</label>
-                    </div>
-                    <div><input type="checkbox" id="invert-check" name="invert-check" onclick="invert()"> <label for="invert-check" >Invert colors</label></div>
-                </div>  
-            </div>  
-            <div class="bg-overlay"></div>
-        </button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Big Lez Background</title>
+  <link rel="shortcut icon" href="https://pngimage.net/wp-content/uploads/2018/05/big-lez-show-png-4-300x200.png">
+
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<header></header>
+
+<body>
+  <div class="canvas">
+    <div class="bg sky">
+      <div class="bg lb"></div>
+      <div class="bg mb"></div>
+      <div class="bg star"></div>
     </div>
-    <script src="main.js"></script>
-  </body>
+    <div class="bg rainbow" alt="rainbow">
+      <div class="fg img" alt="fgimg">
+        <div id="hideDiv">
+          Click on the moon for extra settings!
+        </div>
+      </div>
+      <button class="bg moon visible"></button>
+      <button class="bg button invisible" onclick="dropdown(this.children)">
+        <div class="custom-model-main">
+          <div class="custom-model-inner">
+            <div class="close-btn">×</div>
+            <div class="custom-model-wrap">
+              <div class="pop-up-content-wrap">
+                Settings
+              </div>
+              <div>
+                <input type="range" id="clouds-slider" name="clouds-slider" min="0" max="100"
+                  onchange="cloudGenerator(valueAsNumber)"><label for="clouds-slider">Clouds</label>
+              </div>
+              <div>
+                <input type="range" id="stars-slider" name="stars-slider" min="50" max="2000"
+                  onchange="starGenerator(valueAsNumber)"><label for="stars-slider">Stars</label>
+              </div>
+              <div><input type="checkbox" id="invert-check" name="invert-check" onclick="invert()"> <label
+                  for="invert-check">Invert colors</label></div>
+            </div>
+          </div>
+          <div class="bg-overlay"></div>
+      </button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
 </html>
 <!-- https://www.freeiconspng.com/thumbs/moon-png/moon-png-no-background-15.png -->
 <!-- https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1fafbbc6-41b8-4b54-97b6-9edcf6725560/d7t4mdm-a38e3582-7d57-417a-841f-28fd430ef47f.png/v1/fill/w_800,h_800,strp/bright_full_moon_png_by_clairesolo_d7t4mdm-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvMWZhZmJiYzYtNDFiOC00YjU0LTk3YjYtOWVkY2Y2NzI1NTYwXC9kN3Q0bWRtLWEzOGUzNTgyLTdkNTctNDE3YS04NDFmLTI4ZmQ0MzBlZjQ3Zi5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.fb7BjB3-5pSJPN1_V-A2ICDgKJyW1CQ8r3kCQVGTaWE -->
