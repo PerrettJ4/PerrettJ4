@@ -121,7 +121,6 @@ function invert() {
 }
 
 // moon 5 second thing
-
 const noti = document.querySelector("#hideDiv");
 
 setTimeout(() => {

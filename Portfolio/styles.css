@@ -107,6 +107,18 @@ body {
       16 0,
     auto; /*!emojicursor.app*/
 }
+/* Click the Moon */
+#hideDiv {
+  background: midnightblue;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  z-index: 99999;
+}
+
 #spacer {
   height: 100px;
   background-color: white;

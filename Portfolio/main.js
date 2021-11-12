@@ -82,3 +82,8 @@ function darkSideOfTheMoon() {
 }
 
 // moon 5 second thing
+const noti = document.querySelector("#hideDiv");
+
+setTimeout(() => {
+  noti.style.display = "none";
+}, 500000);
