@@ -86,4 +86,4 @@ const noti = document.querySelector("#hideDiv");
 
 setTimeout(() => {
   noti.style.display = "none";
-}, 500000);
+}, 5000);
