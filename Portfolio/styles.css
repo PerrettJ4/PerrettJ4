@@ -275,7 +275,7 @@ li {
 }
 /* PROJECT */
 .mouse {
-  height: 1rem;
+  height: 1.2rem;
   padding: 1px;
   border-radius: 50%;
   border: solid black 1px;
@@ -284,7 +284,9 @@ li {
 }
 
 .mouse:hover {
-  background-color: lightblue;
+  background-color: rgb(108, 238, 255);
+  box-shadow: 0px 0px 5px rgb(108, 238, 255);
+
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='30' height='36' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='50%'>❤️</text></svg>")
       16 0,
     auto; /*!emojicursor.app*/
