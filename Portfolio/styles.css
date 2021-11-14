@@ -25,7 +25,7 @@ body {
 }
 
 #myCanvas {
-  height: 300px;
+  height: 340px;
   width: 100%;
   /* background-image: url("./spaceimage.png"); */
   background-size: cover;
@@ -48,6 +48,7 @@ body {
       16 0,
     auto; /*!emojicursor.app*/
 }
+
 .backboard-top {
   height: 50%;
   width: 100%;
