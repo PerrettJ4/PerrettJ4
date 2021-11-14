@@ -156,8 +156,8 @@ window.onload = function () {
 
     var pattern = ctx.createPattern(img, "no-repeat");
     ctx.fillStyle = pattern;
-    ctx.fillRect(0, 0, W, H);
 
+    ctx.fillRect(0, 0, W, H);
     ctx.globalCompositeOperation = "lighter";
 
     for (var i = 0; i < particles.length; i++) {

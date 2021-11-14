@@ -97,7 +97,7 @@ body {
   margin-top: 10%;
   height: 200px;
   width: 200px;
-  border: 7px solid white;
+  border: 7px solid rgb(255, 255, 255);
   overflow-x: clip;
   border-radius: 100%;
 }
@@ -156,7 +156,7 @@ body {
   background-color: white;
 }
 .section {
-  border: white 2px solid;
+  border: rgba(255, 255, 255, 0) 2px solid;
 }
 .section h2 {
   font-size: 24px;
@@ -601,20 +601,46 @@ svg circle:nth-child(2) {
 }
 @media only screen and (max-width: 400px) {
   #page-cols {
-    height: 2000px;
+    height: 1950px;
     margin-top: 0px;
   }
   #skills {
-    height: 15%;
+    height: 25%;
   }
   #contact {
     height: 10%;
   }
-  .col:nth-child(1) {
-    height: 80%;
+  #left-col {
+    height: 90%;
   }
-  .col:nth-child(2) {
+  #right-col {
     margin-top: 0px;
-    height: 120%;
+    height: 110%;
+  }
+  #myCanvas {
+    display: none;
+  }
+  .backboard {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 378px) {
+  #page-cols {
+    height: 1900px;
+    margin-top: 0px;
+  }
+  #skills {
+    height: 25%;
+  }
+
+  #contact {
+    height: 10%;
+  }
+  #left-col {
+    height: 85%;
+  }
+  #right-col {
+    margin-top: 0px;
+    height: 115%;
   }
 }
