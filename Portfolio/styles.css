@@ -24,9 +24,15 @@ body {
   color: #000308;
 }
 
+#myCanvas {
+  height: 300px;
+  width: 100%;
+  /* background-image: url("./spaceimage.png"); */
+  background-size: cover;
+}
 .backboard {
   height: 300px;
-  width: auto;
+  width: 100%;
   background-size: cover;
   background-image: url("./spaceimage.png");
   z-index: 5;
