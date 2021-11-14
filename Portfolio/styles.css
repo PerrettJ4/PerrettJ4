@@ -29,8 +29,10 @@ body {
   width: 100%;
   /* background-image: url("./spaceimage.png"); */
   background-size: cover;
+  position: absolute;
 }
 .backboard {
+  position: inherit;
   height: 300px;
   width: 100%;
   background-size: cover;
@@ -41,7 +43,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-.backboard:hover {
+#myCanvas:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>")
       16 0,
     auto; /*!emojicursor.app*/
@@ -112,6 +114,7 @@ body {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>🛸</text></svg>")
       16 0,
     auto; /*!emojicursor.app*/
+  position: relative;
 }
 /* Click the Moon */
 #hideDiv {

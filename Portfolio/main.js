@@ -149,10 +149,12 @@ window.onload = function () {
     //In the next frame the background is painted normally without blending to the
     //previous frame
     ctx.globalCompositeOperation = "source-over";
+
     var img = new Image();
+
     img.src = "./spaceimage.png";
 
-    var pattern = ctx.createPattern(img, "repeat");
+    var pattern = ctx.createPattern(img, "no-repeat");
     ctx.fillStyle = pattern;
     ctx.fillRect(0, 0, W, H);
 
