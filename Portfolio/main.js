@@ -66,7 +66,7 @@
 
 function changecolor(skr) {
   skr.style.backgroundColor = "violet";
-  skr.style.boxShadow = "0px 0px 5px mediumorchid";
+  skr.style.boxShadow = "0px 0px 7px mediumorchid";
 }
 
 const me = document.querySelector("#me");
@@ -158,6 +158,7 @@ window.onload = function () {
     ctx.fillStyle = pattern;
 
     ctx.fillRect(0, 0, W, H);
+
     ctx.globalCompositeOperation = "lighter";
 
     for (var i = 0; i < particles.length; i++) {
