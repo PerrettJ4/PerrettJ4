@@ -60,6 +60,11 @@ body {
   flex-direction: column;
   transform: translateY(50px);
 }
+.heading-box:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
+}
 .heading-box.left {
   align-items: start;
 }
@@ -112,6 +117,12 @@ body {
 }
 #moon-button {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>🛸</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
+  position: relative;
+}
+.headings {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='45' height='54' viewport='0 0 100 100' style='fill:black;font-size:27px;'><text y='50%'>👽</text></svg>")
       16 0,
     auto; /*!emojicursor.app*/
   position: relative;
