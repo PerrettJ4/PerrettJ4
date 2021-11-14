@@ -86,7 +86,7 @@ const noti = document.querySelector("#hideDiv");
 
 setTimeout(() => {
   noti.style.display = "none";
-}, 6000);
+}, 5000);
 
 /* MOUSE TRACKING FUNCTION */
 window.onload = function () {
@@ -151,12 +151,13 @@ window.onload = function () {
     ctx.globalCompositeOperation = "source-over";
 
     var img = new Image();
-    img.classList.add("scoobyDoo");
+
     img.src = "./spaceimage.png";
 
     var pattern = ctx.createPattern(img, "no-repeat");
     ctx.fillStyle = pattern;
     ctx.fillRect(0, 0, W, H);
+
     ctx.globalCompositeOperation = "lighter";
 
     for (var i = 0; i < particles.length; i++) {
