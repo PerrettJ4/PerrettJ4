@@ -82,7 +82,7 @@ function darkSideOfTheMoon() {
   moonBg.style.filter = me.style.filter.includes("100%")
     ? "brightness(9) opacity(1)"
     : "";
-  moonBg.style.opacity = me.style.filter.includes("100%") ? "1" : "0.1";
+  moonBg.style.opacity = me.style.filter.includes("100%") ? "1" : "0.06";
   window.style.backgroundColor = me.style.filter.includes("100%")
     ? "black"
     : "white";
