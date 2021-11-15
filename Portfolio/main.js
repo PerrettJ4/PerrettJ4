@@ -69,6 +69,7 @@ function changecolor(skr) {
   skr.style.boxShadow = "0px 0px 7px mediumorchid";
 }
 
+const moonBg = document.querySelector("#moon-bg");
 const me = document.querySelector("#me");
 function darkSideOfTheMoon() {
   document.documentElement.style.filter =
@@ -78,6 +79,14 @@ function darkSideOfTheMoon() {
   me.style.filter = me.style.filter.includes("100%")
     ? "invert(0%)"
     : "invert(100%)";
+  moonBg.style.filter = me.style.filter.includes("100%")
+    ? "brightness(9) opacity(1)"
+    : "";
+  moonBg.style.opacity = me.style.filter.includes("100%") ? "1" : "0.1";
+  window.style.backgroundColor = me.style.filter.includes("100%")
+    ? "black"
+    : "white";
+
   console.log(w, me);
 }
 
