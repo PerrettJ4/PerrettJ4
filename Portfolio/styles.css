@@ -312,7 +312,7 @@ li {
   text-align: center;
 }
 .trait img {
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 5px;
   padding: 2px;
   height: 100%;
