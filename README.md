@@ -1,4 +1,9 @@
-### Hi there I'm James, feel free to message me!👋  or checkout my [website!](https://perrettj4.netlify.app/) with links to all my projects! 🎨
+<img src="https://www.codewars.com/users/PerrettJ4/badges/large">
+
+## Hi there I'm James, feel free to message me!👋  or checkout my [website!](https://perrettj4.netlify.app/) with links to all my projects! 🎨
+
+
+
 
 <!--
 <div style="display: inline_block">
