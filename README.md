@@ -1,4 +1,4 @@
-<img src="https://www.codewars.com/users/PerrettJ4/badges/large">
+[<img src="https://www.codewars.com/users/PerrettJ4/badges/large">](https://www.codewars.com/users/PerrettJ4)
 
 ## Hi there I'm James, feel free to message me!👋  or checkout my [website!](https://perrettj4.netlify.app/) with links to all my projects! 🎨
 
