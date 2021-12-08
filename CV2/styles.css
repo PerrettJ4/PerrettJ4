@@ -44,7 +44,7 @@ body {
   height: 100%;
 }
 .backboard {
-  height: 300px;
+  height: 400px;
   width: auto;
   background-size: cover;
   background-image: url("./spaceimage.png");
@@ -87,14 +87,12 @@ body {
 .backboard-bottom {
   height: 50%;
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  transform: translateY(70px);
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  justify-items: center;
 }
 .user-circle {
-  position: absolute;
-  margin-left: 41%;
-  margin-top: 10%;
   height: 200px;
   width: 200px;
   border: 7px solid white;
@@ -113,8 +111,7 @@ body {
 }
 .moon img {
   height: 200px;
-  margin-left: 30px;
-  margin-top: 200px;
+  transform: translateY(30px);
 }
 #spacer {
   height: 100px;
@@ -283,11 +280,11 @@ li {
   align-items: center;
 }
 .contact img {
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.13);
   border-radius: 5px;
   padding: 2px;
   height: 60%;
-  width: auto;
+  width: min-content;
   margin-right: 12%;
 }
 
