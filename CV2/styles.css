@@ -203,19 +203,29 @@ li {
   align-items: center;
 }
 #JDE {
-  box-shadow: 0 0 5px burlywood;
+  border: 1px solid rgba(222, 184, 135, 0.452);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 #raven {
-  box-shadow: 0 0 5px grey;
+  border: 1px solid rgba(128, 128, 128, 0.432);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 #soc {
-  box-shadow: 0 0 5px lightblue;
+  border: 1px solid rgba(99, 139, 177, 0.486);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 #bham {
-  box-shadow: 0 0 5px rgb(228, 163, 163);
+  border: 1px solid rgba(228, 163, 163, 0.432);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 #stas {
-  box-shadow: 0 0 5px rgb(97, 57, 57);
+  border: 1px solid rgba(97, 57, 57, 0.404);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .city-container h5 {
   margin: 0;
