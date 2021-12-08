@@ -202,30 +202,28 @@ li {
   padding: 2px;
   align-items: center;
 }
-#JDE {
-  border: 1px solid rgba(222, 184, 135, 0.452);
+#JDE,
+#raven,
+#soc,
+#bham,
+#stas {
   padding-left: 5px;
   padding-right: 5px;
+}
+#JDE {
+  border: 1px solid rgba(222, 184, 135, 0.452);
 }
 #raven {
   border: 1px solid rgba(128, 128, 128, 0.432);
-  padding-left: 5px;
-  padding-right: 5px;
 }
 #soc {
   border: 1px solid rgba(99, 139, 177, 0.486);
-  padding-left: 5px;
-  padding-right: 5px;
 }
 #bham {
   border: 1px solid rgba(228, 163, 163, 0.432);
-  padding-left: 5px;
-  padding-right: 5px;
 }
 #stas {
   border: 1px solid rgba(97, 57, 57, 0.404);
-  padding-left: 5px;
-  padding-right: 5px;
 }
 .city-container h5 {
   margin: 0;

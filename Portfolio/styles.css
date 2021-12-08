@@ -50,7 +50,7 @@ body {
   height: 100%;
 }
 #myCanvas {
-  height: 340px;
+  height: 400px;
   width: 100%;
   /* background-image: url("./spaceimage.png"); */
   background-size: cover;
@@ -58,7 +58,7 @@ body {
 }
 .backboard {
   /* position: inherit; */
-  height: 300px;
+  height: 400px;
   width: 100%;
   background-size: cover;
   /* background-image: url("./spaceimage.png"); */
@@ -112,17 +112,16 @@ body {
 .backboard-bottom {
   height: 50%;
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  transform: translateY(70px);
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  justify-items: center;
+  pointer-events: none;
 }
 .user-circle {
-  position: absolute;
-  margin-left: 41%;
-  margin-top: 10%;
   height: 200px;
   width: 200px;
-  border: 7px solid rgb(255, 255, 255);
+  border: 7px solid white;
   overflow-x: clip;
   border-radius: 100%;
 }
@@ -132,14 +131,15 @@ body {
   object-fit: cover;
   margin-bottom: 100px;
   object-position: -19px -8px;
+  pointer-events: all;
 }
 .moon {
   width: 40%;
 }
 .moon img {
   height: 200px;
-  margin-left: 30px;
-  margin-top: 200px;
+  transform: translateY(30px);
+  pointer-events: all;
 }
 #moon-button {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>🛸</text></svg>")
@@ -147,7 +147,8 @@ body {
     auto; /*!emojicursor.app*/
   position: relative;
 }
-.headings {
+.headings,
+.user-circle img {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='45' height='54' viewport='0 0 100 100' style='fill:black;font-size:27px;'><text y='50%'>👽</text></svg>")
       16 0,
     auto; /*!emojicursor.app*/
@@ -160,10 +161,39 @@ body {
   margin: auto;
   left: 0;
   color: #fff;
-  padding: 10px;
+  height: 60px;
   text-align: center;
+  display: grid;
+  grid-template-columns: 95% 5%;
+  justify-items: center;
+  align-items: center;
   position: fixed;
   z-index: 99999;
+  border: 2px solid black;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#hide-text {
+  transform: translateX(20%);
+}
+#close-div {
+  background: none;
+  color: white;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-left: 2px solid black;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #spacer {
@@ -252,20 +282,28 @@ li {
   padding: 2px;
   align-items: center;
 }
+#JDE,
+#raven,
+#soc,
+#bham,
+#stas {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 #JDE {
-  box-shadow: 0 0 5px burlywood;
+  border: 1px solid rgba(222, 184, 135, 0.452);
 }
 #raven {
-  box-shadow: 0 0 5px grey;
+  border: 1px solid rgba(128, 128, 128, 0.432);
 }
 #soc {
-  box-shadow: 0 0 5px lightblue;
+  border: 1px solid rgba(99, 139, 177, 0.486);
 }
 #bham {
-  box-shadow: 0 0 5px rgb(228, 163, 163);
+  border: 1px solid rgba(228, 163, 163, 0.432);
 }
 #stas {
-  box-shadow: 0 0 5px rgb(97, 57, 57);
+  border: 1px solid rgba(97, 57, 57, 0.404);
 }
 .city-container h5 {
   margin: 0;
@@ -318,6 +356,15 @@ li {
   height: 100%;
   min-width: 82%;
   width: auto;
+}
+/* ROCKET */
+#rocket-div {
+  transform: translateY(80px);
+}
+#rocket {
+  transform: scaleX(-1);
+  margin-left: 80%;
+  width: 20%;
 }
 /* PROJECT */
 .mouse {
@@ -489,10 +536,17 @@ svg circle:nth-child(2) {
   stroke: #ff04f7;
 }
 
-@media only screen and (max-width: 1050px) {
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1150px) {
+  #page-cols {
+    height: 1600px;
+  }
+}
+@media only screen and (max-width: 1100px) {
   #page-cols {
     margin-top: 58px;
-    height: 1400px;
+    height: 2700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -518,23 +572,6 @@ svg circle:nth-child(2) {
   #contact {
     margin-left: 12%;
     margin-right: 12%;
-  }
-}
-
-@media only screen and (max-width: 1150px) {
-  #page-cols {
-    height: 1600px;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  #page-cols {
-    height: 2500px;
-  }
-  .heading-box {
-    display: flex;
-    transform: translateY(50px);
-    align-items: flex-start;
-    margin-bottom: 50px;
   }
 
   .headings {

@@ -95,8 +95,9 @@ const noti = document.querySelector("#hideDiv");
 
 setTimeout(() => {
   noti.style.display = "none";
-}, 5000);
+}, 10000);
 
+const closeDiv = () => (noti.style.display = "none");
 /* MOUSE TRACKING FUNCTION */
 window.onload = function () {
   var canvas = document.getElementById("myCanvas");
@@ -106,7 +107,7 @@ window.onload = function () {
   var W = window.innerWidth,
     H = window.innerHeight;
   canvas.width = W;
-  canvas.height = 300;
+  canvas.height = 400;
 
   var particles = [];
   var mouse = {};
@@ -136,7 +137,7 @@ window.onload = function () {
     //location = mouse coordinates
     //Now the flame follows the mouse coordinates
     if (mouse.x && mouse.y) {
-      this.location = { x: mouse.x - 30, y: mouse.y + 30 };
+      this.location = { x: mouse.x - 20, y: mouse.y + 30 };
     } else {
       this.location = { x: W / 2, y: H / 2 };
     }
