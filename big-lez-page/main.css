@@ -215,39 +215,28 @@ brightness(95%) contrast(80%); */
   transition: background-image 3s ease-in-out;
 }
 .custom-model-main {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; /* z-index: 1050; */
-  outline: 0;
+  width: max-content;
+
   opacity: 0;
-  transition: opacity 0.15s linear, z-index 0.15;
-  z-index: -1;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .model-open {
   z-index: 99999;
   opacity: 1;
-  overflow: hidden;
 }
 .custom-model-inner {
   transform: translate(0, -25%);
   transition: transform 0.3s ease-out;
-  display: inline-block;
+  display: contents;
   vertical-align: middle;
-  width: 600px;
+  width: fit-content;
   margin: 30px auto;
-  max-width: 97%;
 }
 .custom-model-wrap {
-  display: block;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: max-content;
   position: relative;
   background-color: #fff;
   border: 1px solid #999;
@@ -262,6 +251,9 @@ brightness(95%) contrast(80%); */
   max-height: calc(100vh - 70px);
   overflow-y: auto;
 }
+.setting {
+  height: 3rem;
+}
 .model-open .custom-model-inner {
   transform: translate(0, 0);
   position: relative;
@@ -271,22 +263,10 @@ brightness(95%) contrast(80%); */
   background: rgba(0, 0, 0, 0.6);
   z-index: 99;
 }
-.bg-overlay {
-  background: rgba(0, 0, 0, 0);
-  height: 100vh;
-  width: 100%;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  transition: background-image 0.15s linear;
-}
+
 .close-btn {
   position: absolute;
-  right: 0;
   top: -30px;
-  /* cursor: pointer; */
   z-index: 99;
   font-size: 30px;
   color: black;
@@ -294,13 +274,44 @@ brightness(95%) contrast(80%); */
 
 /* Click the Moon */
 #hideDiv {
-  background: magenta;
-  width: 400px;
-  margin: 0 auto;
-
+  background: hotpink;
+  width: 100%;
+  margin: auto;
+  left: 0;
   color: #fff;
-  padding: 10px;
+  height: 60px;
   text-align: center;
+  display: grid;
+  grid-template-columns: 95% 5%;
+  justify-items: center;
+  align-items: center;
+  position: fixed;
+  z-index: 99999;
+  border: 2px solid black;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#hide-text {
+  transform: translateX(20%);
+}
+#close-div {
+  background: none;
+  color: white;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-left: 2px solid black;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 800px) {

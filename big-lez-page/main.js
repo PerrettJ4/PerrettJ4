@@ -116,8 +116,27 @@ function dropdown(child) {
   child[0].classList.toggle("model-open");
 }
 
-function invert() {
-  document.documentElement.classList.toggle("invert");
+// function to remove given filters
+const removeFilter = (filt) => {
+  const filters = document.documentElement.style.filter.toString().split(" ");
+  return filters.filter((item) => !item.includes(filt));
+};
+
+function invert(x) {
+  // document.documentElement.classList.toggle("invert");
+  const newFilters = removeFilter("invert");
+  newFilters.push(`invert(${x}%) `);
+  document.documentElement.style.filter = newFilters.join(" ");
+}
+function sepia(x) {
+  const newFilters = removeFilter("sepia");
+  newFilters.push(`sepia(${x / 100}) `);
+  document.documentElement.style.filter = newFilters.join(" ");
+}
+function hueRotate(x) {
+  const newFilters = removeFilter("hue-rotate");
+  newFilters.push(`hue-rotate(${x}deg) `);
+  document.documentElement.style.filter = newFilters.join(" ");
 }
 
 // moon 5 second thing
@@ -125,4 +144,5 @@ const noti = document.querySelector("#hideDiv");
 
 setTimeout(() => {
   noti.style.display = "none";
-}, 5000);
+}, 10000);
+const closeDiv = () => (noti.style.display = "none");

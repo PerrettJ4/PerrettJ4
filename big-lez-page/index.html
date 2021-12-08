@@ -24,7 +24,8 @@
     <div class="bg rainbow" alt="rainbow">
       <div class="fg img" alt="fgimg">
         <div id="hideDiv">
-          Click on the moon for extra settings!
+          <b id="hide-text"> Click the Moon for extra settings!</b>
+          <div alt='close-button' id='close-div' onclick="closeDiv()">X</div>
         </div>
       </div>
       <button class="bg moon visible"></button>
@@ -34,21 +35,33 @@
             <div class="close-btn">×</div>
             <div class="custom-model-wrap">
               <div class="pop-up-content-wrap">
-                Settings
+                <h2>Settings</h2>
               </div>
-              <div>
+              <div class='setting'>
                 <input type="range" id="clouds-slider" name="clouds-slider" min="0" max="100"
                   onchange="cloudGenerator(valueAsNumber)"><label for="clouds-slider">Clouds</label>
               </div>
-              <div>
+              <div class='setting'>
                 <input type="range" id="stars-slider" name="stars-slider" min="50" max="2000"
                   onchange="starGenerator(valueAsNumber)"><label for="stars-slider">Stars</label>
               </div>
-              <div><input type="checkbox" id="invert-check" name="invert-check" onclick="invert()"> <label
-                  for="invert-check">Invert colors</label></div>
+              <div class='setting'><input type="range" id="invert-slider" name="sepia-slider" min="0" max="100"
+                  value='0' onchange="invert(valueAsNumber)"><label for="clouds-slider">Invert Colours</label>
+              </div>
+              <div class='setting'><input type="range" id="sepia-slider" name="sepia-slider" min="0" max="100" value='0'
+                  onchange="sepia(valueAsNumber)"><label for="clouds-slider">Sepia</label>
+              </div>
+              <div class='setting'><input type="range" id="hue-slider" name="hue-slider" min="0" max="360" value='0'
+                  onchange="hueRotate(valueAsNumber)"><label for="clouds-slider">Hue-Rotate (deg)</label>
+              </div>
+              <div class='setting'><iframe
+                  src="https://open.spotify.com/embed/album/1S3p4gE0ItGRNqc07vDxPa?utm_source=generator" width="100%"
+                  height="80" frameBorder="0" allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
             </div>
           </div>
-          <div class="bg-overlay"></div>
+        </div>
+        <div class="bg-overlay"></div>
       </button>
     </div>
   </div>
