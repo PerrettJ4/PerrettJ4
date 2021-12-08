@@ -302,7 +302,7 @@ li {
   border-radius: 5px;
   padding: 2px;
   height: 60%;
-  width: min-content;
+  width: auto;
   margin-right: 12%;
 }
 
