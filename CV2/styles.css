@@ -178,10 +178,9 @@ li {
 }
 #work {
   height: 69%;
-  transform: translateY(-10px);
 }
 #contact {
-  height: 35%;
+  height: 31%;
 }
 #hobbies {
   transform: translate(0, -40px);
@@ -270,6 +269,15 @@ li {
   height: 100%;
   width: auto;
   min-width: 80%;
+}
+/* ROCKET */
+#rocket-div {
+  transform: translateY(30px);
+}
+#rocket {
+  transform: scaleX(-1);
+  margin-left: 80%;
+  width: 40%;
 }
 /* CONTACT */
 .contact {
