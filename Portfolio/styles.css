@@ -646,7 +646,8 @@ svg circle:nth-child(2) {
     font-size: 35px;
   }
   .gallery-cell {
-  width: 33%;
+    width: 33%;
+  }
 }
 @media only screen and (max-width: 900px) {
   #page-cols {
