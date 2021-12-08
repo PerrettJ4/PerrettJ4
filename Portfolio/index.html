@@ -11,8 +11,10 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Mohave:wght@600&display=swap');
   </style>
-
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -272,7 +274,199 @@
             <h5> Nov 21</h5>
           </div>
         </div>
-        <ul>
+        <!-- Flickity HTML init -->
+        <div class="gallery js-flickity" data-flickity='{ "freeScroll": true, "wrapAround": true }'>
+          <div class="gallery-cell">
+            <div class='photo-div'><img class='project-photo' src="./assets/DSP.png"
+                alt="Disassembly sequencing project"></div>
+            <div class='project-row'>
+              <div class='project-sub-col'>
+                <h5>
+                  Disassembly Sequence Planner
+                </h5>
+                <p>
+                  Python, Jupyter, AI
+                </p>
+              </div>
+              <div id='project-sub-col'>
+                <a href='https://github.com/PerrettJ4/Disassembly-Sequence-Planner' target="_blank"
+                  rel="noopener noreferrer"><img class='mouse' src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
+                    onclick="changecolor(this)" /></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="gallery-cell">
+            <div class='photo-div'><img class='project-photo' src="./assets/big-lez.png" alt="Big-Lez"></div>
+            <div class='project-row'>
+              <div class='project-sub-col'>
+                <h5>
+                  Big Lez Page
+                </h5>
+                <p>
+                  HTML, Javascript, CSS, API embedding, Logic
+                </p>
+              </div>
+              <div id='project-sub-col'>
+                <a href='https://big-lez-tribute.netlify.app/' target="_blank" rel="noopener noreferrer"><img
+                    class='mouse' src='https://winaero.com/blog/wp-content/uploads/2017/07/Mouse-Cursor-icon-256.png'
+                    onclick="changecolor(this)" /></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="gallery-cell">
+            <div class='photo-div'><img class='project-photo' src="./assets/TRPS.png" alt="The Rock, Paper, Scissors">
+            </div>
+            <div class='project-row'>
+              <div class='project-sub-col'>
+                <h5>
+                  w1 Hackathon The Rock, Paper, Scissors
+                </h5>
+                <p>
+                  HTML, Javascript, CSS
+                </p>
+              </div>
+              <div id='project-sub-col'>
+                <a href='https://therock-paper-scissors.netlify.app/' target="_blank" rel="noopener noreferrer"><img
+                    class='mouse' src='https://winaero.com/blog/wp-content/uploads/2017/07/Mouse-Cursor-icon-256.png'
+                    onclick="changecolor(this)" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-cell">
+            <div class='photo-div'><img class='project-photo' src="./assets/energiser-leaderboard.png"
+                alt="w4 Energiser Leaderboard"></div>
+            <div class='project-row'>
+              <div class='project-sub-col'>
+                <h5>
+                  w4 Energiser Leaderboard
+                </h5>
+                <p>
+                  PostgresSQL, CRUD, Heroku, HTML, JS, CSS, Node
+                </p>
+              </div>
+              <div id='project-sub-col'>
+                <a href='WEBSITE' target="_blank" rel="noopener noreferrer"><img class='mouse'
+                    src='https://winaero.com/blog/wp-content/uploads/2017/07/Mouse-Cursor-icon-256.png'
+                    onclick="changecolor(this)" /></a>
+                <a href='GITHUB' target="_blank" rel="noopener noreferrer"><img class='mouse'
+                    src='https://cdn-icons-png.flaticon.com/512/25/25231.png' onclick="changecolor(this)" /></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="gallery-cell">
+            <div class='photo-div'><img class='project-photo' src="./assets/nutflix.png" alt="w5 Nutflix"></div>
+            <div class='project-row'>
+              <div class='project-sub-col'>
+                <h5>
+                  w5 Nutflix
+                </h5>
+                <p>
+                  REGEX, SQL, CRUD, Heroku, APIs, HTML, JS, CSS, Node
+                </p>
+              </div>
+              <div id='project-sub-col'>
+                <a href='https://nutflix.netlify.app/' target="_blank" rel="noopener noreferrer"><img class='mouse'
+                    src='https://winaero.com/blog/wp-content/uploads/2017/07/Mouse-Cursor-icon-256.png'
+                    onclick="changecolor(this)" /></a>
+                <a href='https://github.com/PerrettJ4/w5-Nutify-App' target="_blank" rel="noopener noreferrer"><img
+                    class='mouse' src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
+                    onclick="changecolor(this)" /></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="gallery-cell">
+            <div class='photo-div'><img class='project-photo' src="./assets/IDM.png" alt="w7 Intergalactic Dank Memes">
+            </div>
+            <div class='project-row'>
+              <div class='project-sub-col'>
+                <h5>
+                  w7 Intergalactic Dank Memes
+                </h5>
+                <p>
+                  React, React-Router-DOM, APIs, HTML, JS, CSS
+                </p>
+              </div>
+              <div id='project-sub-col'>
+                <a href='https://intergalactic-memes.netlify.app/' target="_blank" rel="noopener noreferrer"><img
+                    class='mouse' src='https://winaero.com/blog/wp-content/uploads/2017/07/Mouse-Cursor-icon-256.png'
+                    onclick="changecolor(this)" /></a>
+                <a href='https://github.com/PerrettJ4/w7-Intergalactic-Memes' target="_blank"
+                  rel="noopener noreferrer"><img class='mouse' src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
+                    onclick="changecolor(this)" /></a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="gallery-cell">
+            <div class='photo-div'><img class='project-photo' src="./assets/vibez-chaser.png"
+                alt="w8 winning project - Vibezz-Chaser">
+            </div>
+            <div class='project-row'>
+              <div class='project-sub-col'>
+                <h5>
+                  w8 winning project - Vibezz Chasers
+                </h5>
+                <p>
+                  Dummy data generation, React, React-Router-DOM, OAG API, SQL, NODE, HEROKU, HTML, JS, CSS
+                </p>
+              </div>
+              <div id='project-sub-col'>
+                <a href='https://vibezz-chaser.netlify.app/' target="_blank" rel="noopener noreferrer"><img
+                    class='mouse' src='https://winaero.com/blog/wp-content/uploads/2017/07/Mouse-Cursor-icon-256.png'
+                    onclick="changecolor(this)" /></a>
+                <a href='https://github.com/PerrettJ4/w8-Vibezz-Chaser' target="_blank" rel="noopener noreferrer"><img
+                    class='mouse' src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
+                    onclick="changecolor(this)" /></a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="gallery-cell">
+            <div class='photo-div'><img class='project-photo' src="./assets/demeter.png"
+                alt="wk13+ 4 week project - Demeter (Tracking App)">
+            </div>
+            <div class='project-row'>
+              <div class='project-sub-col'>
+                <h5>
+                  wk13+ 4 week project - Demeter (Tracking App)
+                </h5>
+                <p>
+                  AWS Amplify, Tailwind, Typescript, SQL, Auth0, React, JS, CSS, Dummy data generation
+                </p>
+              </div>
+              <div id='project-sub-col'>
+                <a href='https://main.d3rc3gpot85iux.amplifyapp.com/' target="_blank" rel="noopener noreferrer"><img
+                    class='mouse' src='https://winaero.com/blog/wp-content/uploads/2017/07/Mouse-Cursor-icon-256.png'
+                    onclick="changecolor(this)" /></a>
+                <a href='https://github.com/SchoolOfCode/phantom-elephants-backend' target="_blank"
+                  rel="noopener noreferrer"><img class='mouse' src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
+                    onclick="changecolor(this)" /></a>
+                <a href='https://github.com/onlyasmalllizard/phantom-elephants-frontend' target="_blank"
+                  rel="noopener noreferrer"><img class='mouse' src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
+                    onclick="changecolor(this)" /></a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <!-- <ul>
           <li>
             Disassembly Sequence Planner<a href='https://github.com/PerrettJ4/Disassembly-Sequence-Planner'
               target="_blank" rel="noopener noreferrer"><img class='mouse'
@@ -337,7 +531,7 @@
                 onclick="changecolor(this)" /></a>
           </li>
 
-        </ul>
+        </ul> -->
         <!-- School of Code -->
         <div class="city-container">
           <h4>School of Code</h4>

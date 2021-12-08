@@ -121,7 +121,7 @@ body {
 .user-circle {
   height: 200px;
   width: 200px;
-  border: 7px solid white;
+  border: 7px solid #e7e7e7;
   overflow-x: clip;
   border-radius: 100%;
 }
@@ -366,7 +366,69 @@ li {
   margin-left: 80%;
   width: 20%;
 }
-/* PROJECT */
+
+/* PROJECTS */
+
+.flickity-viewport,
+.gallery-cell {
+  height: 250px;
+}
+.gallery {
+  margin-top: 28px;
+  margin-bottom: 50px;
+}
+.gallery-cell {
+  width: 47%;
+  border-radius: 5px;
+  margin-right: 10px;
+  overflow: hidden;
+  background-color: #74889488;
+}
+.gallery-cell.is-selected {
+  background-color: #8f99a088;
+}
+/* cell number */
+.gallery-cell:before {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+/* Container */
+.photo-div {
+  overflow: hidden;
+  margin: 10px;
+  display: flex;
+}
+/* Image */
+.project-photo {
+  height: 150px;
+  width: 100%;
+  object-position: center;
+  margin: auto;
+  align-self: center;
+}
+.gallery-cell div h5 {
+  margin: 0px;
+}
+.gallery-cell div p {
+  margin: 0px;
+}
+.project-row {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+}
+.project-sub-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* links */
 .mouse {
   height: 1.4rem;
   padding: 1.5px;
@@ -538,12 +600,12 @@ svg circle:nth-child(2) {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1150px) {
+/* @media only screen and (max-width: 1150px) {
   #page-cols {
     height: 1600px;
   }
-}
-@media only screen and (max-width: 1100px) {
+} */
+@media only screen and (max-width: 1300px) {
   #page-cols {
     margin-top: 58px;
     height: 2700px;
@@ -583,6 +645,8 @@ svg circle:nth-child(2) {
   #surname {
     font-size: 35px;
   }
+  .gallery-cell {
+  width: 33%;
 }
 @media only screen and (max-width: 900px) {
   #page-cols {
