@@ -605,6 +605,12 @@ svg circle:nth-child(2) {
     height: 1600px;
   }
 } */
+@media only screen and (min-width: 1950px) {
+  .gallery-cell {
+    width: 28%;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   #page-cols {
     margin-top: 58px;

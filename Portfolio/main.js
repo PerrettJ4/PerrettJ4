@@ -71,6 +71,8 @@ function changecolor(skr) {
 
 const moonBg = document.querySelector("#moon-bg");
 const me = document.querySelector("#me");
+const projectPhotos = document.querySelectorAll(".project-photo");
+
 function darkSideOfTheMoon() {
   document.documentElement.style.filter =
     document.documentElement.style.filter.includes("contrast")
@@ -79,6 +81,12 @@ function darkSideOfTheMoon() {
   me.style.filter = me.style.filter.includes("100%")
     ? "invert(0%)"
     : "invert(100%)";
+  projectPhotos.forEach(
+    (photo) =>
+      (photo.style.filter = photo.style.filter.includes("100%")
+        ? "invert(0%)"
+        : "invert(100%)")
+  );
   moonBg.style.filter = me.style.filter.includes("100%")
     ? "brightness(9) opacity(1)"
     : "";
