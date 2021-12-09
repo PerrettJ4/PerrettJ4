@@ -19,7 +19,7 @@
 }
 @media only screen and (max-width: 1920px) {
   body {
-    font-size: 100%;
+    font-size: 105%;
   }
 }
 
@@ -687,29 +687,37 @@ svg circle:nth-child(2) {
 }
 @media only screen and (max-width: 700px) {
   #page-cols {
-    height: 3100px;
+    height: 4500px;
+  }
+  .gallery-cell {
+    width: 50%;
   }
 }
 @media only screen and (max-width: 620px) {
   #page-cols {
-    height: 3350px;
+    height: 5000px;
   }
   #contact div {
     margin: 0px;
   }
+  #skills {
+    height: 26%;
+  }
 }
 @media only screen and (max-width: 560px) {
   #page-cols {
-    height: 3500px;
+    height: 5200px;
   }
 }
 @media only screen and (max-width: 530px) {
   #page-cols {
-    height: 3500px;
     margin-top: 0px;
   }
+  .gallery-cell {
+    width: 80%;
+  }
   #skills {
-    height: 28%;
+    height: 23%;
   }
   #contact {
     height: 20%;
@@ -721,7 +729,7 @@ svg circle:nth-child(2) {
     background-repeat: unset;
   }
   #page-cols {
-    height: 1650px;
+    height: 2550px;
   }
   #skills {
     height: 25%;
@@ -739,16 +747,16 @@ svg circle:nth-child(2) {
 }
 @media only screen and (max-width: 450px) {
   #page-cols {
-    height: 1900px;
+    height: 2800px;
   }
 }
 @media only screen and (max-width: 400px) {
   #page-cols {
-    height: 1950px;
+    height: 2750px;
     margin-top: 0px;
   }
   #skills {
-    height: 25%;
+    height: 16%;
   }
   #contact {
     height: 10%;
@@ -758,7 +766,11 @@ svg circle:nth-child(2) {
   }
   #right-col {
     margin-top: 0px;
-    height: 110%;
+    height: 115%;
+  }
+  .bg {
+    height: 190%;
+    background-repeat: unset;
   }
   #myCanvas {
     display: none;
@@ -770,21 +782,7 @@ svg circle:nth-child(2) {
 }
 @media only screen and (max-width: 380px) {
   #page-cols {
-    height: 1930px;
+    height: 3000px;
     margin-top: 0px;
-  }
-  #skills {
-    height: 25%;
-  }
-
-  #contact {
-    height: 10%;
-  }
-  #left-col {
-    height: 85%;
-  }
-  #right-col {
-    margin-top: 0px;
-    height: 115%;
   }
 }
