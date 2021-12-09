@@ -8,6 +8,21 @@
     height 1s, font-size 1s; */
 }
 
+/* FONT SIZING */
+.city-container h4 {
+  font-size: 113%;
+}
+@media only screen and (max-width: 2560px) {
+  body {
+    font-size: 120%;
+  }
+}
+@media only screen and (max-width: 1920px) {
+  body {
+    font-size: 100%;
+  }
+}
+
 html,
 body,
 h1,
@@ -102,10 +117,10 @@ body {
   color: white;
   margin: 0;
   margin-bottom: 5px;
-  font-size: 40px;
+  /* font-size: 40px; */
 }
 #surname {
-  font-size: 55px;
+  /* font-size: 55px; */
   margin: 0px;
 }
 /* IMAGE */
@@ -214,20 +229,19 @@ body {
   border: rgba(255, 255, 255, 0) 2px solid;
 }
 .section h2 {
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 .section h4 {
   font-weight: 300;
 }
 .section p,
 li {
-  font-size: 14px;
+  /* font-size: 14px; */
   color: rgb(10, 10, 66);
   margin-top: 2px;
 }
 .section ul {
   padding-left: 5%;
-  margin-top: 5px;
 }
 #profile {
   height: 12%;
@@ -371,7 +385,7 @@ li {
 
 .flickity-viewport,
 .gallery-cell {
-  height: 250px;
+  height: 300px;
 }
 .gallery {
   margin-top: 25px;
@@ -393,7 +407,6 @@ li {
   flex-direction: column;
   text-align: center;
   line-height: 200px;
-  font-size: 80px;
   color: white;
 }
 /* Container */
@@ -412,9 +425,12 @@ li {
 }
 .gallery-cell div h5 {
   margin: 0px;
+  font-size: 100%;
 }
 .gallery-cell div p {
   margin: 0px;
+  font-size: 95%;
+  line-height: normal;
 }
 .project-row {
   display: flex;
@@ -607,7 +623,7 @@ svg circle:nth-child(2) {
 } */
 @media only screen and (min-width: 1950px) {
   .gallery-cell {
-    width: 28%;
+    width: 32%;
   }
 }
 
@@ -652,7 +668,7 @@ svg circle:nth-child(2) {
     font-size: 35px;
   }
   .gallery-cell {
-    width: 33%;
+    width: 32%;
   }
 }
 @media only screen and (max-width: 900px) {

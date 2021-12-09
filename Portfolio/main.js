@@ -114,8 +114,9 @@ window.onload = function () {
   //Make the canvas occupy the full page
   var W = window.innerWidth,
     H = window.innerHeight;
-  canvas.width = W;
-  canvas.height = 400;
+  const Xcoeff = W <= 1920 ? 1 : W <= 2560 ? 3 / 4 : 0.5;
+  canvas.width = W * Xcoeff;
+  canvas.height = 400 * Xcoeff;
 
   var particles = [];
   var mouse = {};
@@ -145,7 +146,7 @@ window.onload = function () {
     //location = mouse coordinates
     //Now the flame follows the mouse coordinates
     if (mouse.x && mouse.y) {
-      this.location = { x: mouse.x - 20, y: mouse.y + 30 };
+      this.location = { x: mouse.x * Xcoeff - 25, y: mouse.y * Xcoeff + 40 };
     } else {
       this.location = { x: W / 2, y: H / 2 };
     }
