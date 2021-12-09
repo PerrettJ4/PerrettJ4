@@ -8,19 +8,28 @@
     height 1s, font-size 1s; */
 }
 
+/* PAGE HEIGHT VAR */
+:root {
+  --h: 1.1;
+}
 /* FONT SIZING */
 .city-container h4 {
   font-size: 113%;
 }
-@media only screen and (max-width: 2560px) {
-  body {
-    font-size: 120%;
-  }
+.city-container h5 {
+  font-size: 95%;
 }
-@media only screen and (max-width: 1920px) {
-  body {
-    font-size: 105%;
-  }
+.section h2 {
+  font-size: 150%;
+}
+.trait-text-hold {
+  font-size: 60%;
+}
+.headings {
+  font-size: 250%;
+}
+#surname {
+  font-size: 300%;
 }
 
 html,
@@ -32,6 +41,7 @@ h4,
 h5,
 h6 {
   font-family: "Lato", "Roboto", sans-serif;
+  font-size: 100%;
 }
 
 html {
@@ -150,6 +160,7 @@ body {
 }
 .moon {
   width: 40%;
+  transform: translateX(-20px);
 }
 .moon img {
   height: 200px;
@@ -192,6 +203,9 @@ body {
 #hide-text {
   transform: translateX(20%);
 }
+#hide-text {
+  margin: 0;
+}
 #close-div {
   background: none;
   color: white;
@@ -218,7 +232,7 @@ body {
 /* PAGE */
 #page-cols {
   margin-top: 58px;
-  height: 1500px;
+  height: calc(2000px * var(--h));
   /* background-color: whitesmoke; */
   display: flex;
 }
@@ -343,7 +357,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 80%;
+  height: 60%;
 }
 .skill-row {
   display: flex;
@@ -626,11 +640,16 @@ svg circle:nth-child(2) {
     width: 32%;
   }
 }
+@media only screen and (max-width: 1650px) {
+  #page-cols {
+    height: calc(2400px * var(--h));
+  }
+}
 
 @media only screen and (max-width: 1300px) {
   #page-cols {
     margin-top: 58px;
-    height: 2700px;
+    height: calc(3900px * var(--h));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -657,29 +676,35 @@ svg circle:nth-child(2) {
     margin-left: 12%;
     margin-right: 12%;
   }
-
+  #skills {
+    height: 31%;
+  }
   .headings {
     color: white;
     margin: 0;
     margin-bottom: 5px;
-    font-size: 30px;
-  }
-  #surname {
-    font-size: 35px;
   }
   .gallery-cell {
     width: 32%;
   }
 }
 @media only screen and (max-width: 900px) {
+  body {
+    font-size: 90%;
+  }
+}
+@media only screen and (max-width: 900px) {
   #page-cols {
-    height: 2670px;
+    height: calc(4000px * var(--h));
     margin-top: 30px;
   }
 }
 @media only screen and (max-width: 800px) {
   #page-cols {
-    height: 2900px;
+    height: calc(4200px * var(--h));
+  }
+  #skills {
+    height: 29%;
   }
   .heading-box {
     margin-bottom: 80px;
@@ -687,7 +712,7 @@ svg circle:nth-child(2) {
 }
 @media only screen and (max-width: 700px) {
   #page-cols {
-    height: 4500px;
+    height: calc(4500px * var(--h));
   }
   .gallery-cell {
     width: 50%;
@@ -695,7 +720,7 @@ svg circle:nth-child(2) {
 }
 @media only screen and (max-width: 620px) {
   #page-cols {
-    height: 5000px;
+    height: calc(5000px * var(--h));
   }
   #contact div {
     margin: 0px;
@@ -706,7 +731,7 @@ svg circle:nth-child(2) {
 }
 @media only screen and (max-width: 560px) {
   #page-cols {
-    height: 5200px;
+    height: calc(5200px * var(--h));
   }
 }
 @media only screen and (max-width: 530px) {
@@ -728,8 +753,14 @@ svg circle:nth-child(2) {
     height: 180%;
     background-repeat: unset;
   }
+  .headings {
+    font-size: 160%;
+  }
+  #surname {
+    font-size: 200%;
+  }
   #page-cols {
-    height: 2550px;
+    height: calc(2550px * var(--h));
   }
   #skills {
     height: 25%;
@@ -752,7 +783,7 @@ svg circle:nth-child(2) {
 }
 @media only screen and (max-width: 400px) {
   #page-cols {
-    height: 2750px;
+    height: calc(2750px * var(--h));
     margin-top: 0px;
   }
   #skills {
@@ -782,7 +813,23 @@ svg circle:nth-child(2) {
 }
 @media only screen and (max-width: 380px) {
   #page-cols {
-    height: 3000px;
+    height: calc(3000px * var(--h));
     margin-top: 0px;
+  }
+}
+/* FONT MEDIA QUERIES */
+@media only screen and (max-width: 2560px) {
+  body {
+    font-size: 120%;
+  }
+}
+@media only screen and (max-width: 1920px) {
+  body {
+    font-size: 110%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  body {
+    font-size: 105%;
   }
 }

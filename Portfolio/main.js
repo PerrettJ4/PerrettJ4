@@ -103,7 +103,7 @@ const noti = document.querySelector("#hideDiv");
 
 setTimeout(() => {
   noti.style.display = "none";
-}, 10000);
+}, 1000000);
 const closeDiv = () => (noti.style.display = "none");
 
 /* MOUSE TRACKING FUNCTION */
@@ -227,3 +227,11 @@ window.onload = function () {
 
   setInterval(draw, 30);
 };
+
+// scaling me :D
+const userCircle = document.querySelector(".user-circle");
+const W = window.innerWidth;
+userCircle.style.transform = `scale(${
+  (W * 1.15) / 1920 > 0.9 ? (W * 1.15) / 1920 : 0.9
+})`;
+console.log(userCircle, W);
