@@ -103,7 +103,7 @@ const noti = document.querySelector("#hideDiv");
 
 setTimeout(() => {
   noti.style.display = "none";
-}, 1000000);
+}, 10000);
 const closeDiv = () => (noti.style.display = "none");
 
 /* MOUSE TRACKING FUNCTION */
