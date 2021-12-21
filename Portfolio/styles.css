@@ -381,10 +381,9 @@ li {
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 5px;
   padding: 2px;
-  height: 100%;
-  min-width: 82%;
-  max-width: 96%;
-  width: 95%;
+  height: 5rem;
+
+  width: 5rem;
 }
 /* ROCKET */
 #rocket-div {
