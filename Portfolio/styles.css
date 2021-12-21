@@ -190,7 +190,8 @@ body {
   height: 60px;
   text-align: center;
   display: grid;
-  grid-template-columns: 95% 5%;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-areas: ". hidetext close";
   justify-items: center;
   align-items: center;
   position: fixed;
@@ -201,12 +202,11 @@ body {
   -webkit-box-sizing: border-box;
 }
 #hide-text {
-  transform: translateX(20%);
-}
-#hide-text {
   margin: 0;
+  grid-area: hidetext;
 }
 #close-div {
+  grid-area: close;
   background: none;
   color: white;
   border: none;
@@ -382,7 +382,6 @@ li {
   border-radius: 5px;
   padding: 2px;
   height: 5rem;
-
   width: 5rem;
 }
 /* ROCKET */
@@ -717,6 +716,20 @@ svg circle:nth-child(2) {
   .gallery-cell {
     width: 50%;
   }
+  .trait img {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 1px;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  #myCanvas {
+    display: none;
+  }
+  .backboard {
+    position: relative;
+    background-image: url("./spaceimage.png");
+  }
 }
 @media only screen and (max-width: 620px) {
   #page-cols {
@@ -749,10 +762,10 @@ svg circle:nth-child(2) {
   }
 }
 @media only screen and (max-width: 500px) {
-  .bg {
+  /* .bg {
     height: 180%;
     background-repeat: unset;
-  }
+  } */
   .headings {
     font-size: 160%;
   }
@@ -760,30 +773,42 @@ svg circle:nth-child(2) {
     font-size: 200%;
   }
   #page-cols {
-    height: calc(2550px * var(--h));
+    height: calc(4450px * var(--h));
   }
   #skills {
-    height: 25%;
+    height: 30%;
   }
   #contact {
     height: 15%;
   }
-  .col:nth-child(1) {
+  #hobbies {
+    height: 35%;
+  }
+  /* #left-col {
+    height: 99%;
+  }
+  #right-col {
+    height: 101%;
+  } */
+  #work {
     height: 90%;
   }
-  .col:nth-child(2) {
-    height: 110%;
-    margin-top: 10px;
+  .trait img {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 1px;
+    height: 3rem;
+    width: 3rem;
   }
 }
 @media only screen and (max-width: 450px) {
   #page-cols {
-    height: 2800px;
+    height: calc(4950px * var(--h));
   }
 }
 @media only screen and (max-width: 400px) {
   #page-cols {
-    height: calc(2750px * var(--h));
+    height: calc(5550px * var(--h));
     margin-top: 0px;
   }
   #skills {
@@ -791,24 +816,6 @@ svg circle:nth-child(2) {
   }
   #contact {
     height: 10%;
-  }
-  #left-col {
-    height: 90%;
-  }
-  #right-col {
-    margin-top: 0px;
-    height: 115%;
-  }
-  .bg {
-    height: 190%;
-    background-repeat: unset;
-  }
-  #myCanvas {
-    display: none;
-  }
-  .backboard {
-    position: relative;
-    background-image: url("./spaceimage.png");
   }
 }
 @media only screen and (max-width: 380px) {
