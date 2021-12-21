@@ -282,7 +282,8 @@ brightness(95%) contrast(80%); */
   height: 60px;
   text-align: center;
   display: grid;
-  grid-template-columns: 95% 5%;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-areas: ". header close";
   justify-items: center;
   align-items: center;
   position: fixed;
@@ -293,9 +294,10 @@ brightness(95%) contrast(80%); */
   -webkit-box-sizing: border-box;
 }
 #hide-text {
-  transform: translateX(20%);
+  grid-area: header;
 }
 #close-div {
+  grid-area: close;
   background: none;
   color: white;
   border: none;
