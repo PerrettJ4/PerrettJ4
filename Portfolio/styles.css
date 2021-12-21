@@ -147,7 +147,7 @@ body {
   height: 200px;
   width: 200px;
   border: 7px solid #e7e7e7;
-  overflow-x: clip;
+  overflow: hidden;
   border-radius: 100%;
 }
 .user-circle img {
