@@ -708,6 +708,15 @@ svg circle:nth-child(2) {
   .heading-box {
     margin-bottom: 80px;
   }
+  #profile,
+  #education,
+  #skills,
+  #hobbies,
+  #work,
+  #contact {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 @media only screen and (max-width: 700px) {
   #page-cols {
@@ -793,6 +802,15 @@ svg circle:nth-child(2) {
   #work {
     height: 90%;
   }
+  #profile,
+  #education,
+  #skills,
+  #hobbies,
+  #work,
+  #contact {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .trait img {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
@@ -818,10 +836,17 @@ svg circle:nth-child(2) {
     height: 10%;
   }
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 350px) {
   #page-cols {
-    height: calc(3000px * var(--h));
+    height: calc(6050px * var(--h));
     margin-top: 0px;
+  }
+  .trait img {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 1px;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 }
 /* FONT MEDIA QUERIES */
