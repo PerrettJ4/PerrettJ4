@@ -65,13 +65,13 @@ body {
   display: flex;
   flex-direction: column;
   transform: translateY(50px);
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 .heading-box.left {
   align-items: start;
 }
 .heading-box.right {
   align-items: end;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 .headings {
   color: white;
