@@ -677,8 +677,8 @@ svg circle:nth-child(2) {
   #hobbies,
   #work,
   #contact {
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 6%;
+    margin-right: 6%;
   }
   #skills {
     height: 31%;
