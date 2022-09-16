@@ -1,8 +1,10 @@
 [<img src="https://www.codewars.com/users/PerrettJ4/badges/large">](https://www.codewars.com/users/PerrettJ4)
 
-## Hi there I'm James, feel free to message me!👋  or checkout my [website!](https://www.perrettj.co.uk/) with links to all my projects! 🎨
+## Hi there I'm James, a published full stack developer, feel free to message me!👋  or checkout my [website!](https://www.perrettj.co.uk/) with links to all my projects! 🎨
 
-## Published full stack mobile developer: [FindMyFacility](https://play.google.com/store/apps/details?id=com.findmyfacility&gl=GB)
+### [<img height=100 width=100 padding=100 src="https://play-lh.googleusercontent.com/3QZ8cJTgmcwedGDvJKI41FF7CTGhljRLlLSZ_50gFpC4Y2pgynXmJjQe3-HZRoTbyDg=s96-rw">](https://play.google.com/store/apps/details?id=com.findmyfacility&gl=GB) [FindMyFacility](https://play.google.com/store/apps/details?id=com.findmyfacility&gl=GB)
+### [<img height=100 width=100 src="https://play-lh.googleusercontent.com/FRrC7-fIgfQ5Hczk1bsHFqKdOIHtke0z97FuwHVjoqVQHEtTrW181m67X8CExbIYwQ=w480-h960-rw">](https://perrettj4.github.io)[FantasyTable](https://perrettj4.github.io)
+<br>
 
 
 <!--
