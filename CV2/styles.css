@@ -147,13 +147,13 @@ li {
   margin-top: 5px;
 }
 #profile {
-  height: 12%;
+  height: 15%;
 }
 #profile p {
   margin-top: 5px;
 }
 #education {
-  height: 27%;
+  height: 25%;
 }
 #skills {
   height: 35%;
@@ -172,18 +172,22 @@ li {
 }
 
 #work,
-#contact {
+#contact,
+#flp {
   margin-right: 12%;
   margin-left: 3%;
 }
 #work {
-  height: 69%;
+  height: 54%;
+}
+#flp {
+  height: 13%;
 }
 #contact {
   height: 31%;
 }
 #hobbies {
-  transform: translate(0, -40px);
+  transform: translate(0, -50px);
 }
 .skill-container {
   height: 400px;
@@ -250,7 +254,6 @@ li {
   flex-direction: column;
   justify-content: space-between;
   height: 80%;
-  display: none;
 }
 .skill-row {
   display: flex;
@@ -270,8 +273,12 @@ li {
   margin: 0;
   text-align: center;
 }
+#skillsImage {
+  height: "100%";
+  width: "100%";
+}
 .trait img {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 5px;
   padding: 2px;
   height: 100%;
@@ -280,7 +287,7 @@ li {
 }
 /* ROCKET */
 #rocket-div {
-  transform: translateY(30px);
+  transform: translateY(150px);
 }
 #rocket {
   transform: scaleX(-1);
@@ -296,7 +303,7 @@ li {
   align-items: center;
 }
 .contact img {
-  border: 1px solid rgba(0, 0, 0, 0.13);
+  /* border: 1px solid rgba(0, 0, 0, 0.13); */
   border-radius: 5px;
   padding: 2px;
   height: 60%;
