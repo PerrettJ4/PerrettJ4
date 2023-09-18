@@ -1,41 +1,47 @@
-[<img src="https://www.codewars.com/users/PerrettJ4/badges/large">](https://www.codewars.com/users/PerrettJ4)
+Hi! 👋 My name is James Perrett.
+============================
 
-## Hi there I'm James, a published full stack developer, feel free to message me!👋  or checkout my [website!](https://www.perrettj.co.uk/) with links to all my projects! 🎨
+I'm a developer and tech communicator.
+-------------------------------
+
+After my Mechanical Engineering Masters degree which specialised in AI, I joined School of Code! Since then I have 2 years experience with Atos. In my own time I have developed several full stack apps. League Predictor (A mobile version of a game my friends and I played at school) has 40,000 downloads across iOS and Android! 
+
+I have recently been working with a Youtuber who has 300,000 subscribers on a novel football app!
+
+* 🌍  I'm based in Bristol, UK
+* ✉️  You can contact me at [perrettj4@gmail.com](mailto:perrettj4@gmail.com)
+
+### Skills
+
+<p align="left">
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /></a>
+<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" /></a>
+<a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a>
+<a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
+<a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a>
+<a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="36" height="36" alt="Express" /></a>
+<a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" /></a>
+<a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a>
+</p>
+
+### Socials
+
+<p align="left"> <a href="https://www.github.com/lizkaufman" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a> <a href="https://www.linkedin.com/in/liz-kaufman" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a> <a href="https://www.twitter.com/codingbumblebee" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg" width="32" height="32" /></a></p>
+
+[<img src="https://www.codewars.com/users/PerrettJ4/badges/small">](https://www.codewars.com/users/PerrettJ4)
+
+### Badges
+
+<b>My GitHub Stats</b>
+
+<a href="http://www.github.com/perrettj4"><img src="https://github-readme-stats.vercel.app/api?username=perrettj4&show_icons=true&hide=issues,&count_private=true&title_color=facc15&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="perrettJ4's GitHub stats" /></a>
+
+
+
+
 
 ### [<img height=100 width=100 padding=100 src="https://play-lh.googleusercontent.com/3QZ8cJTgmcwedGDvJKI41FF7CTGhljRLlLSZ_50gFpC4Y2pgynXmJjQe3-HZRoTbyDg=s96-rw">](https://play.google.com/store/apps/details?id=com.findmyfacility&gl=GB) [FindMyFacility](https://play.google.com/store/apps/details?id=com.findmyfacility&gl=GB)
-### [<img height=100 width=100 src="https://play-lh.googleusercontent.com/FRrC7-fIgfQ5Hczk1bsHFqKdOIHtke0z97FuwHVjoqVQHEtTrW181m67X8CExbIYwQ=w480-h960-rw">](https://perrettj4.github.io)[FantasyTable](https://perrettj4.github.io)
+### [<img height=100 width=100 src="https://play-lh.googleusercontent.com/FRrC7-fIgfQ5Hczk1bsHFqKdOIHtke0z97FuwHVjoqVQHEtTrW181m67X8CExbIYwQ=w480-h960-rw">](https://perrettj4.github.io)[League Predictor](https://perrettj4.github.io)
 <br>
 
-
-<!--
-<div style="display: inline_block">
-  <img align="center" alt="corshidan-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="corshidan-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="corshidan-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="corshidan-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg">
-  <img align="center" alt="corshidan-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
-  <img align="center" alt="corshidan-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> 
-  <img align="center" alt="corshidan-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"> 
-  <img align="center" alt="corshidan-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"> 
-  <img align="center" alt="corshidan-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg">
-
-</div> -->
-
-<!-- [![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=perrettj4&count_private=true&theme=tokyonight&showicons=true)]() -->
-
-[![My GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=perrettj4&langs_count=4&theme=tokyonight)]()
-
-<!--
-**PerrettJ4/PerrettJ4** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
