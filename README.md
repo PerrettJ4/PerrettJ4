@@ -4,9 +4,9 @@ Hi! 👋 My name is James Perrett.
 I'm a developer and tech communicator.
 -------------------------------
 
-After my Mechanical Engineering Masters degree which specialised in AI, I joined School of Code! Since then I have 2 years experience with Atos. In my own time I have developed several full stack apps. League Predictor (A mobile version of a game my friends and I played at school) has 40,000 downloads across iOS and Android! 
+After my Mechanical Engineering Masters degree which specialised in AI, I joined School of Code! Since then I have 2 years experience with Atos. In my own time I have developed several full stack apps. League Predictor (A mobile version of a game my friends and I played at school) has 60k+ downloads across iOS and Android! 
 
-I have recently been working with a Youtuber who has 300,000 subscribers on a novel football app!
+I have recently been working with a Youtuber who has 350k+ subscribers on a novel football app!
 
 * 🌍  I'm based in Bristol, UK
 * ✉️  You can contact me at [perrettj4@gmail.com](mailto:perrettj4@gmail.com)
