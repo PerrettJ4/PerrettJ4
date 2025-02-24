@@ -10,10 +10,30 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", "Roboto", sans-serif;
+  /* font-family: "Lato", "Roboto", sans-serif; */
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  /* letter-spacing: 0.01em; */
+}
+
+h1 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h2 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 html {
   background-color: #e1e1e1;
+}
+a {
+  z-index: 999;
 }
 p,
 li {
@@ -53,7 +73,9 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 95%, 0% 100%);
 }
+
 .backboard-top {
   height: 50%;
   width: 100%;
@@ -76,7 +98,7 @@ body {
 .headings {
   color: white;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-size: 40px;
 }
 #surname {
@@ -98,6 +120,11 @@ body {
   border: 7px solid white;
   overflow-x: clip;
   border-radius: 100%;
+  overflow: hidden;
+  left: 50%;
+  top: 260px;
+  transform: translateX(-50%);
+  position: absolute;
 }
 .user-circle img {
   height: 110%;
@@ -119,16 +146,40 @@ body {
 /* PAGE */
 #page-cols {
   margin-top: 58px;
-  height: 1550px;
+  height: 1450px;
   /* background-color: whitesmoke; */
   display: flex;
 }
 .col {
+  display: flex;
   width: 50%;
+  gap: 25px;
+  flex-direction: column;
   /* background-color: white; */
 }
 .section {
   border: rgba(255, 255, 255, 0) 2px solid;
+  background-color: #19191911;
+  border-radius: 10px;
+  height: auto;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  /* Gradient for crater depth */
+  background: radial-gradient(
+    circle at center,
+    #4a4a4a11 0%,
+    #2d2d2d11 60%,
+    #1a1a1a11 100%
+  );
+
+  /* Inner shadow to give the effect of depth */
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1);
+
+  /* Optional: outer shadow to make it "pop" */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3),
+    inset 0 0 30px rgba(0, 0, 0, 0.1);
 }
 .section h2 {
   font-size: 24px;
@@ -144,9 +195,9 @@ li {
 }
 .section ul {
   padding-left: 5%;
-  margin-top: 5px;
+  margin-top: 6px;
 }
-#profile {
+/* #profile {
   height: 15%;
 }
 #profile p {
@@ -162,33 +213,30 @@ li {
 #hobbies {
   height: 23%;
   margin-top: 10px;
-}
+} */
 #education,
 #skills,
 #profile,
 #hobbies {
-  margin-left: 12%;
-  margin-right: 3%;
+  margin-left: 9%;
 }
 
 #work,
 #contact,
 #flp {
-  margin-right: 12%;
-  margin-left: 3%;
-}
-#work {
-  height: 54%;
-}
-#flp {
-  height: 13%;
+  margin-right: 9%;
 }
 #contact {
-  height: 31%;
+  height: 24%;
 }
-#hobbies {
-  transform: translate(0, -30px);
+
+/* #work {
+  height: 43%;
 }
+#flp {
+  height: auto;
+}
+  */
 .skill-container {
   height: 400px;
   position: static;
@@ -196,10 +244,10 @@ li {
 /* SPAN DATE BAR */
 .city-container {
   display: flex;
+  align-items: center;
+  margin-top: 6px;
 }
-.city-container.mt {
-  margin-top: 25px;
-}
+
 .date-box {
   display: flex;
   border-radius: 5px;
@@ -211,23 +259,23 @@ li {
 #soc,
 #bham,
 #stas {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 #JDE {
-  border: 1px solid rgba(222, 184, 135, 0.452);
+  border: 1px solid rgba(99, 139, 177, 0.486);
 }
 #raven {
-  border: 1px solid rgba(128, 128, 128, 0.432);
+  border: 1px solid rgba(99, 139, 177, 0.486);
 }
 #soc {
   border: 1px solid rgba(99, 139, 177, 0.486);
 }
 #bham {
-  border: 1px solid rgba(228, 163, 163, 0.432);
+  border: 1px solid rgba(99, 139, 177, 0.486);
 }
 #stas {
-  border: 1px solid rgba(97, 57, 57, 0.404);
+  border: 1px solid rgba(99, 139, 177, 0.486);
 }
 .city-container h5 {
   margin: 0;
@@ -241,13 +289,7 @@ li {
   height: 20px;
   display: flex;
 }
-.big-line {
-  border-bottom: 1px solid black;
-  width: 15px;
-  height: 1px;
-  height: 50%;
-  margin: 0 10px;
-}
+
 /* SKILLS */
 .skill-col {
   display: flex;
@@ -293,13 +335,15 @@ li {
   transform: scaleX(-1);
   margin-left: 80%;
   width: 40%;
+  z-index: 0;
+  position: absolute;
 }
 /* CONTACT */
 .contact {
   display: flex;
   width: 50%;
   height: 15.5%;
-  margin-left: 10%;
+  margin-left: 1.5%;
   align-items: center;
 }
 .contact img {
@@ -308,7 +352,7 @@ li {
   padding: 2px;
   height: 60%;
   width: auto;
-  margin-right: 12%;
+  margin-right: 12px;
 }
 
 /* HOBBIES */
@@ -319,6 +363,18 @@ li {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 3%;
+}
+.single-before2 {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 3%;
 }
 .single-before li {
   text-indent: -1.5rem;
@@ -334,7 +390,7 @@ li {
 }
 li span {
   position: relative;
-  left: 10px;
+  left: 12px;
 }
 
 /* PROGRESS BARS */
@@ -358,7 +414,7 @@ li span {
   transition: 0.5s;
 }
 .container .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-12px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
@@ -373,64 +429,13 @@ li span {
   align-items: center;
   border-radius: 50%;
 }
-.percent .number h3 {
-  font-weight: 700;
-  font-size: 15px;
-  transition: 0.5s;
-  transform: translate(0px, -10px);
-}
-.card:hover .percent .number h3 {
-  color: blue;
-  font-size: 24px;
-}
-.skill-text {
-  width: 54.38px;
-}
-.text {
-  position: relative;
-  color: #777;
-  margin-top: 20px;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: 0.5s;
-  transform: translate(0px, -20px);
-}
-.card:hover .text {
-  color: midnightblue;
-}
-svg {
-  position: relative;
-  overflow: overlay;
-  z-index: 1000;
-}
 
-svg circle {
-  width: 100%;
-  height: 100%;
-  fill: none;
-  stroke: #191919;
-
-  stroke-width: 10;
-  stroke-linecap: round;
-  transform: translate(5px, 5px);
-}
-svg circle:nth-child(2) {
-  stroke-dasharray: 440;
-  stroke-dashoffset: 440;
-}
-.card:nth-child(1) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 75) / 100);
-  stroke: #00ff43;
-}
-.card:nth-child(2) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 80) / 100);
-  stroke: #00a1ff;
-}
-.card:nth-child(3) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 84) / 100);
-  stroke: #ff04f7;
+.big-line {
+  border-bottom: 1px solid black;
+  width: 15px;
+  height: 1px;
+  height: 50%;
+  margin: 0 10px;
 }
 
 @media only screen and (min-width: 1050px) {
