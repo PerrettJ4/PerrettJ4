@@ -143,7 +143,7 @@ body {
   width: auto;
   object-fit: cover;
   margin-bottom: 100px;
-  object-position: -19px -8px;
+  object-position: -5px -12px;
 }
 .moon {
   width: 40%;
@@ -342,7 +342,7 @@ li {
 }
 /* ROCKET */
 #rocket-div {
-  transform: translateY(250px);
+  transform: translateY(-50px);
 }
 #rocket {
   transform: scaleX(-1);
@@ -351,6 +351,7 @@ li {
   z-index: 0;
   position: absolute;
   bottom: 0px;
+  right: -0px;
 }
 /* CONTACT */
 .contact {
