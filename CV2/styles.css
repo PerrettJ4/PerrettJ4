@@ -187,6 +187,8 @@ li {
   margin-top: 6px;
 }
 .section {
+  clear: both; /* Ensures proper clearing of floated elements */
+  overflow: hidden; /* Ensures background fills even if content is large */
   border-radius: 10px;
   height: auto;
   margin-left: 3%;
