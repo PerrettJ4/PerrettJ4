@@ -188,7 +188,7 @@ body {
   );
 
   /* Inner shadow to give the effect of depth */
-  /* box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1); */
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
 }
 .section h2 {
   font-size: 24px;
@@ -367,6 +367,7 @@ li {
   height: 60%;
   width: auto;
   margin-right: 12px;
+  aspect-ratio: 1;
 }
 
 /* HOBBIES */
