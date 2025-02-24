@@ -169,8 +169,24 @@ body {
   flex-direction: column;
   /* background-color: white; */
 }
+
+.section h2 {
+  font-size: 24px;
+}
+.section h4 {
+  font-weight: 300;
+}
+.section p,
+li {
+  font-size: 16px;
+  color: rgb(10, 10, 66);
+  /* margin-top: 2px; */
+}
+.section ul {
+  padding-left: 5%;
+  margin-top: 6px;
+}
 .section {
-  background-color: transparent;
   border-radius: 10px;
   height: auto;
   margin-left: 3%;
@@ -187,24 +203,9 @@ body {
     #1a1a1a22 100%
   );
   background-size: cover; /* Ensure the gradient covers the entire area */
-  /* Inner shadow to give the effect of depth */
+  background-attachment: fixed; /* Add fixed background attachment */
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
-}
-.section h2 {
-  font-size: 24px;
-}
-.section h4 {
-  font-weight: 300;
-}
-.section p,
-li {
-  font-size: 16px;
-  color: rgb(10, 10, 66);
-  /* margin-top: 2px; */
-}
-.section ul {
-  padding-left: 5%;
-  margin-top: 6px;
+  /* Inner shadow to give the effect of depth */
 }
 /* #profile {
   height: 15%;
