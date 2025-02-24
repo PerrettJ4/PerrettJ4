@@ -18,6 +18,11 @@ h6 {
   /* letter-spacing: 0.01em; */
 }
 
+ul,
+p {
+  margin: 0;
+}
+
 h1 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -28,12 +33,19 @@ h2 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 400;
+  margin-top: 0;
+}
+h4 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 17px;
 }
 html {
   background-color: #e1e1e1;
 }
 a {
   z-index: 999;
+  font-size: 16px;
 }
 p,
 li {
@@ -146,7 +158,7 @@ body {
 /* PAGE */
 #page-cols {
   margin-top: 58px;
-  height: 1450px;
+  height: 1550px;
   /* background-color: whitesmoke; */
   display: flex;
 }
@@ -165,12 +177,14 @@ body {
   margin-right: 3%;
   padding-left: 3%;
   padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   /* Gradient for crater depth */
   background: radial-gradient(
     circle at center,
     #4a4a4a11 0%,
     #2d2d2d11 60%,
-    #1a1a1a11 100%
+    #1a1a1a22 100%
   );
 
   /* Inner shadow to give the effect of depth */
@@ -184,9 +198,9 @@ body {
 }
 .section p,
 li {
-  font-size: 14px;
+  font-size: 16px;
   color: rgb(10, 10, 66);
-  margin-top: 2px;
+  /* margin-top: 2px; */
 }
 .section ul {
   padding-left: 5%;
@@ -214,6 +228,7 @@ li {
 #profile,
 #hobbies {
   margin-left: 9%;
+  padding-right: calc(12px + 4%);
 }
 
 #work,
@@ -222,7 +237,7 @@ li {
   margin-right: 9%;
 }
 #contact {
-  height: 22.7%;
+  height: 19.3%;
 }
 
 /* #work {
@@ -240,7 +255,7 @@ li {
 .city-container {
   display: flex;
   align-items: center;
-  margin-top: 6px;
+  margin-top: 24px;
 }
 
 .date-box {
@@ -324,7 +339,7 @@ li {
 }
 /* ROCKET */
 #rocket-div {
-  transform: translateY(150px);
+  transform: translateY(250px);
 }
 #rocket {
   transform: scaleX(-1);
@@ -332,6 +347,7 @@ li {
   width: 40%;
   z-index: 0;
   position: absolute;
+  bottom: 0px;
 }
 /* CONTACT */
 .contact {
@@ -340,6 +356,9 @@ li {
   height: 15.5%;
   margin-left: 1.5%;
   align-items: center;
+}
+.contact p {
+  margin: 0;
 }
 .contact img {
   /* border: 1px solid rgba(0, 0, 0, 0.13); */
@@ -361,7 +380,6 @@ li {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding-bottom: 3%;
 }
 .single-before2 {
   padding: 0;
@@ -369,7 +387,6 @@ li {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding-bottom: 3%;
 }
 .single-before li {
   text-indent: -1.5rem;
@@ -386,6 +403,7 @@ li {
 li span {
   position: relative;
   left: 12px;
+  max-width: 90%;
 }
 
 /* PROGRESS BARS */
