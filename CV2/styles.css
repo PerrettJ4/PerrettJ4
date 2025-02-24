@@ -187,8 +187,7 @@ li {
   margin-top: 6px;
 }
 .section {
-  clear: both; /* Ensures proper clearing of floated elements */
-  overflow: hidden; /* Ensures background fills even if content is large */
+  /* overflow: hidden; Ensures background fills even if content is large */
   border-radius: 10px;
   height: auto;
   margin-left: 3%;
@@ -197,16 +196,24 @@ li {
   padding-right: 3%;
   padding-top: 3%;
   padding-bottom: 3%;
+
+  border-radius: 10px;
+  height: auto;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #2d2d2d11; /* Dark background for crater effect */
+
+  /* Simulate the "crater edge" using inset border */
+  border: 5px solid #1a1a1a22; /* Darker border to create a sunken look */
+
+  /* Box shadow for depth and crater illusion */
+  /* box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.7); */
   /* Gradient for crater depth */
-  background: radial-gradient(
-    circle at center,
-    #4a4a4a11 0%,
-    #2d2d2d11 60%,
-    #1a1a1a22 100%
-  );
-  background-size: cover; /* Ensure the gradient covers the entire area */
-  background-attachment: fixed; /* Add fixed background attachment */
-  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+
   /* Inner shadow to give the effect of depth */
 }
 /* #profile {
