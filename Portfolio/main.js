@@ -36,8 +36,6 @@ function darkSideOfTheMoon() {
   window.style.backgroundColor = me.style.filter.includes("100%")
     ? "black"
     : "white";
-
-  console.log(w, me);
 }
 
 // moon 5 second thing
