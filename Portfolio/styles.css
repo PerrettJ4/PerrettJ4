@@ -66,6 +66,8 @@ body {
   color: #000308;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
+  width: 100vw;
 }
 .bg {
   background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/moon-texture-massimo-pietrobon.jpg);
@@ -80,7 +82,7 @@ body {
   opacity: 0.05;
   filter: invert(100%);
   width: 100%;
-  height: 105%vh;
+  height: 105%;
 }
 .backboard {
   height: 400px;
@@ -582,7 +584,7 @@ li span {
   }
   .bg {
     background-repeat: round;
-    height: 4500px;
+    height: 250%;
   }
 }
 @media only screen and (max-width: 500px) {
