@@ -80,7 +80,7 @@ body {
   opacity: 0.05;
   filter: invert(100%);
   width: 100%;
-  height: 100%;
+  height: 105%vh;
 }
 .backboard {
   height: 400px;
@@ -173,7 +173,7 @@ body {
   width: auto;
   object-fit: cover;
   margin-bottom: 100px;
-  object-position: -5px -12px;
+  object-position: -10px -10px;
 }
 .moon {
   width: 40%;
@@ -552,8 +552,45 @@ li span {
   margin: 0 10px;
 }
 
-@media only screen and (min-width: 1050px) {
-  /* body {
-    background-color: lightblue;
-  } */
+@media only screen and (max-width: 1000px) {
+  #page-cols {
+    flex-direction: column;
+  }
+  .col {
+    width: 100vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .section {
+    width: 80vw;
+  }
+  #work {
+    margin-top: 3%;
+  }
+  #work,
+  #contact,
+  #flp {
+    margin-left: 9%;
+    margin-right: 0%;
+  }
+  .headings {
+    font-size: 25px;
+  }
+  #surname {
+    font-size: 35px;
+    margin: 0px;
+  }
+  .bg {
+    background-repeat: round;
+    height: 4500px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .headings {
+    font-size: 15px;
+  }
+  #surname {
+    font-size: 20px;
+    margin: 0px;
+  }
 }
