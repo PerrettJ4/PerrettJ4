@@ -210,7 +210,7 @@ body {
   height: 60px;
   text-align: center;
   display: grid;
-  grid-template-columns: 5% 90% 5%;
+  grid-template-columns: 10% 80% 10%;
   grid-template-areas: ". hidetext close";
   justify-items: center;
   align-items: center;
