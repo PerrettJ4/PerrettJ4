@@ -20,22 +20,22 @@ function darkSideOfTheMoon() {
     });
   }, 5);
 
-  me.style.filter = me.style.filter.includes("100%")
-    ? "invert(0%)"
-    : "invert(100%)";
-  projectPhotos.forEach(
-    (photo) =>
-      (photo.style.filter = photo.style.filter.includes("100%")
-        ? "invert(0%)"
-        : "invert(100%)")
-  );
-  moonBg.style.filter = me.style.filter.includes("100%")
-    ? "brightness(9) opacity(1)"
-    : "";
-  moonBg.style.opacity = me.style.filter.includes("100%") ? "1" : "0.05";
-  window.style.backgroundColor = me.style.filter.includes("100%")
-    ? "black"
-    : "white";
+  // me.style.filter = me.style.filter.includes("100%")
+  //   ? "invert(0%)"
+  //   : "invert(100%)";
+  // projectPhotos.forEach(
+  //   (photo) =>
+  //     (photo.style.filter = photo.style.filter.includes("100%")
+  //       ? "invert(0%)"
+  //       : "invert(100%)")
+  // );
+  // moonBg.style.filter = me.style.filter.includes("100%")
+  //   ? "brightness(9) opacity(1)"
+  //   : "";
+  // moonBg.style.opacity = me.style.filter.includes("100%") ? "1" : "0.05";
+  // window.style.backgroundColor = me.style.filter.includes("100%")
+  //   ? "black"
+  //   : "white";
 }
 
 // moon 5 second thing
