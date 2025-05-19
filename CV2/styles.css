@@ -138,12 +138,13 @@ body {
   transform: translateX(-50%);
   position: absolute;
 }
+
 .user-circle img {
   height: 110%;
   width: auto;
   object-fit: cover;
   margin-bottom: 100px;
-  object-position: -5px -12px;
+  object-position: -8px -10px;
 }
 .moon {
   width: 40%;
