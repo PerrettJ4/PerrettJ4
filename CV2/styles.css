@@ -70,7 +70,7 @@ body {
   background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/moon-texture-massimo-pietrobon.jpg);
   background-repeat: round;
   background-color: #000;
-  position: fixed;
+  position: absolute;
   z-index: -1;
   top: 0;
   bottom: 0;
