@@ -49,6 +49,8 @@ const closeDiv = () => (noti.style.display = "none");
 /* MOUSE TRACKING FUNCTION */
 window.onload = function () {
   var canvas = document.getElementById("myCanvas");
+  const moonCanvas = document.getElementById("bg-moon");
+  const moonCtx = canvas.getContext("2d");
   var ctx = canvas.getContext("2d");
 
   //Make the canvas occupy the full page
@@ -57,14 +59,22 @@ window.onload = function () {
   const Xcoeff = W <= 1920 ? 1 : W <= 2560 ? 3 / 4 : 0.5;
   canvas.width = W * Xcoeff;
   canvas.height = 400 * Xcoeff;
+  moonCanvas.width = W * Xcoeff;
+  moonCanvas.height = 2000 * Xcoeff;
 
   var particles = [];
   var mouse = {};
+  var moonParticles = [];
 
   //Lets create some particles now
   var particle_count = 50;
+  var moon_particle_count = 50;
   for (var i = 0; i < particle_count; i++) {
     particles.push(new particle());
+  }
+  for (var i = 0; i < moon_particle_count; i++) {
+    particles.push(new particle());
+    moonParticles.push(new particle());
   }
 
   //finally some mouse tracking
@@ -164,8 +174,73 @@ window.onload = function () {
       }
     }
   }
+  function drawMoon() {
+    //Painting the canvas black
+    //Time for lighting magic
+    //particles are painted with "lighter"
+    //In the next frame the background is painted normally without blending to the
+    //previous frame
+    moonCtx.globalCompositeOperation = "source-over";
+
+    var img = new Image();
+
+    // img.baseURI =
+    // "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/moon-texture-massimo-pietrobon.jpg";
+
+    var pattern = moonCtx.createPattern(img, "no-repeat");
+    moonCtx.fillStyle = pattern;
+
+    moonCtx.fillRect(0, 0, W, H);
+
+    moonCtx.globalCompositeOperation = "lighter";
+
+    for (var i = 0; i < moonParticles.length; i++) {
+      var p = moonParticles[i];
+      moonCtx.beginPath();
+      //changing opacity according to the life.
+      //opacity goes to 0 at the end of life of a particle
+      p.opacity = Math.round((p.remaining_life / p.life) * 100) / 100;
+      //a gradient instead of white fill
+      var gradient = moonCtx.createRadialGradient(
+        p.location.x,
+        p.location.y,
+        0,
+        p.location.x,
+        p.location.y,
+        p.radius
+      );
+      gradient.addColorStop(
+        0,
+        "rgba(" + p.r + ", " + p.g + ", " + p.b + ", " + p.opacity + ")"
+      );
+      gradient.addColorStop(
+        0.5,
+        "rgba(" + p.r + ", " + p.g + ", " + p.b + ", " + p.opacity + ")"
+      );
+      gradient.addColorStop(
+        1,
+        "rgba(" + p.r + ", " + p.g + ", " + p.b + ", 0)"
+      );
+      moonCtx.fillStyle = gradient;
+      moonCtx.arc(p.location.x, p.location.y, p.radius, Math.PI * 2, false);
+      moonCtx.fill();
+
+      //lets move the particles
+      p.remaining_life--;
+      p.radius--;
+      p.location.x += p.speed.x;
+      p.location.y += p.speed.y;
+
+      //regenerate particles
+      if (p.remaining_life < 0 || p.radius < 0) {
+        //a brand new particle replacing the dead one
+        moonParticles[i] = new particle();
+      }
+    }
+  }
 
   setInterval(draw, 30);
+  setInterval(drawMoon, 30);
 };
 
 // scaling me :D
