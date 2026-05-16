@@ -1,47 +1,97 @@
-Hi! 👋 My name is James Perrett.
-============================
+# Hi, I'm James Perrett 👋
 
-I'm a developer and tech communicator.
--------------------------------
+I'm a developer and tech communicator based in Bristol, UK.
 
-After my Mechanical Engineering Masters degree which specialised in AI, I joined School of Code! Since then I have 3 years experience with Atos. In my own time I have developed several full stack apps. League Predictor (A mobile version of a game my friends and I played at school) has 60k+ downloads across iOS and Android! 
+After completing my Master's degree in Mechanical Engineering, where I specialised in AI, I joined School of Code and moved into software development. Since then, I've gained 3 years of experience with Atos and have continued building full-stack apps in my own time.
 
-I have recently been working with a Youtuber who has 350k+ subscribers on a novel football app!
+One of my projects, **League Predictor**, is a mobile version of a game my friends and I played at school. It now has **60k+ downloads across iOS and Android**.
 
-* 🌍  I'm based in Bristol, UK
-* ✉️  You can contact me at [perrettj4@gmail.com](mailto:perrettj4@gmail.com)
+Recently, I've also been working with a YouTuber with **350k+ subscribers** on a novel football app.
 
-### Skills
+- 🌍 Based in Bristol, UK
+- ✉️ Contact me at [perrettj4@gmail.com](mailto:perrettj4@gmail.com)
+
+---
+
+## Skills
 
 <p align="left">
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /></a>
-<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" /></a>
-<a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a>
-<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a>
-<a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
-<a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a>
-<a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="36" height="36" alt="Express" /></a>
-<a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" /></a>
-<a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" />
+  </a>
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" />
+  </a>
+  <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" />
+  </a>
+  <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" />
+  </a>
+  <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" />
+  </a>
+  <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="36" height="36" alt="Express" />
+  </a>
+  <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" />
+  </a>
+  <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" />
+  </a>
 </p>
 
-### Socials
+---
 
- <a href="https://www.linkedin.com/in/perrettj4" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
+## Socials
 
-[<img src="https://www.codewars.com/users/PerrettJ4/badges/small">](https://www.codewars.com/users/PerrettJ4)
+<p align="left">
+  <a href="https://www.linkedin.com/in/perrettj4" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" alt="LinkedIn" />
+  </a>
+</p>
 
-### Badges
+[![Codewars](https://www.codewars.com/users/PerrettJ4/badges/small)](https://www.codewars.com/users/PerrettJ4)
 
-<b>My GitHub Stats</b>
+---
 
-<a href="http://www.github.com/perrettj4"><img src="https://github-readme-stats.vercel.app/api?username=perrettj4&show_icons=true&hide=issues,&count_private=true&title_color=facc15&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="perrettJ4's GitHub stats" /></a>
+## Projects
 
+### League Predictor
 
+<a href="https://perrettj4.github.io">
+  <img src="https://play-lh.googleusercontent.com/FRrC7-fIgfQ5Hczk1bsHFqKdOIHtke0z97FuwHVjoqVQHEtTrW181m67X8CExbIYwQ=w480-h960-rw" width="100" height="100" alt="League Predictor app icon" />
+</a>
 
+A mobile prediction game inspired by a game my friends and I played at school.  
+Now with **60k+ downloads across iOS and Android**.
 
+[View project](https://perrettj4.github.io)
 
-### [<img height=100 width=100 padding=100 src="https://play-lh.googleusercontent.com/3QZ8cJTgmcwedGDvJKI41FF7CTGhljRLlLSZ_50gFpC4Y2pgynXmJjQe3-HZRoTbyDg=s96-rw">](https://play.google.com/store/apps/details?id=com.findmyfacility&gl=GB) [FindMyFacility](https://play.google.com/store/apps/details?id=com.findmyfacility&gl=GB)
-### [<img height=100 width=100 src="https://play-lh.googleusercontent.com/FRrC7-fIgfQ5Hczk1bsHFqKdOIHtke0z97FuwHVjoqVQHEtTrW181m67X8CExbIYwQ=w480-h960-rw">](https://perrettj4.github.io)[League Predictor](https://perrettj4.github.io)
-<br>
+---
 
+### JLA Tactics Board
+
+<a href="https://jlatacticsboard.com">
+  <img src="https://jlatacticsboard.com/og-image.png" width="180" alt="JLA Tactics Board preview" />
+</a>
+
+A novel football tactics board app built in collaboration with a YouTuber with **400k+ subscribers**.
+
+[View project](https://jlatacticsboard.com)
+
+---
+
+### FindMyFacility
+
+<a href="https://play.google.com/store/apps/details?id=com.findmyfacility&gl=GB">
+  <img src="https://play-lh.googleusercontent.com/3QZ8cJTgmcwedGDvJKI41FF7CTGhljRLlLSZ_50gFpC4Y2pgynXmJjQe3-HZRoTbyDg=s96-rw" width="100" height="100" alt="FindMyFacility app icon" />
+</a>
+
+A mobile app available on the Google Play Store.
+
+[View on Google Play](https://play.google.com/store/apps/details?id=com.findmyfacility&gl=GB)
