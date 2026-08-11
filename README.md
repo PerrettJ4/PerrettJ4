@@ -2,7 +2,7 @@
 
 I'm a developer and tech communicator based in Bristol, UK.
 
-After completing my Master's degree in Mechanical Engineering, where I specialised in AI, I joined School of Code and moved into software development. Since then, I've gained 3 years of experience with Atos and have continued building full-stack apps in my own time.
+After completing my Master's degree in Mechanical Engineering, where I specialised in AI, I joined School of Code and moved into software development. Since then, I've gained 4 years of experience with Atos and have continued building full-stack apps in my own time.
 
 One of my projects, **League Predictor**, is a mobile version of a game my friends and I played at school. It now has **60k+ downloads across iOS and Android**.
 
@@ -84,14 +84,3 @@ A novel football tactics board app built in collaboration with a YouTuber with *
 
 [View project](https://jlatacticsboard.com)
 
----
-
-### FindMyFacility
-
-<a href="https://play.google.com/store/apps/details?id=com.findmyfacility&gl=GB">
-  <img src="https://play-lh.googleusercontent.com/3QZ8cJTgmcwedGDvJKI41FF7CTGhljRLlLSZ_50gFpC4Y2pgynXmJjQe3-HZRoTbyDg=s96-rw" width="100" height="100" alt="FindMyFacility app icon" />
-</a>
-
-A mobile app available on the Google Play Store.
-
-[View on Google Play](https://play.google.com/store/apps/details?id=com.findmyfacility&gl=GB)
