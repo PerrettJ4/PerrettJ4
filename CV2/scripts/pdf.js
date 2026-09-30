@@ -1,5 +1,8 @@
-// Renders each CV page to pdf/ as one continuous page, matching how the site
-// looks in a desktop browser.
+// Renders each CV page to pdf/ as A4 pages, laid out as the site looks in a
+// desktop browser (1280px wide, scaled to fit the page width). Sections are kept
+// whole across page breaks, and symbols with no glyph in Exo 2 (arrows, stars,
+// emoji) are swapped for plain text so every font embeds as TrueType: recruiting
+// systems often can't open oversized pages or read Type 3 fonts.
 //
 //   npm run pdf         build all CVs once
 //   npm run pdf:watch   rebuild whenever an .html / styles.css / image changes
@@ -19,6 +22,10 @@ import puppeteer from "puppeteer";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = join(root, "pdf");
 const WIDTH = 1280;
+const A4_WIDTH_PX = 793.7; // 210mm at 96dpi
+const A4_HEIGHT_PX = 1122.5; // 297mm at 96dpi
+const SCALE = A4_WIDTH_PX / WIDTH;
+const PAGE_GAP_PX = 56; // space above a section that starts a new page
 
 // page -> output PDF name
 const CVS = {
@@ -60,18 +67,49 @@ async function buildOne(file, pdfName, edit) {
       }, edit);
     }
 
-    const height = await page.evaluate(() =>
-      Math.ceil(document.documentElement.scrollHeight)
+    await page.evaluate(() => {
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      for (let node; (node = walker.nextNode()); ) {
+        node.textContent = node.textContent
+          .replace(/\s*→\s*/g, " to ")
+          .replace(/★/g, "-star")
+          .replace(/\s*\p{Extended_Pictographic}\uFE0F?/gu, "");
+      }
+    });
+    // At the site's 0.1em letter-spacing, text extractors read the name as "JAM ES".
+    await page.addStyleTag({ content: ".heading-box .headings { letter-spacing: 0.06em; }" });
+
+    // Paginate by hand in screen layout: page margins print white, so instead
+    // push any section that would straddle an A4 break onto the next page (with
+    // a gap above it), then stretch the page so the background fills every page.
+    const pages = await page.evaluate(
+      ({ pageHeight, gap }) => {
+        const top = (el) => el.getBoundingClientRect().top + window.scrollY;
+        for (const col of document.querySelectorAll("#page-cols .col")) {
+          for (const el of col.children) {
+            const start = top(el);
+            const end = start + el.getBoundingClientRect().height;
+            const pageEnd = (Math.floor(start / pageHeight) + 1) * pageHeight;
+            if (end > pageEnd) {
+              el.style.marginTop = `${pageEnd - start + gap}px`;
+            }
+          }
+        }
+        const count = Math.ceil(document.documentElement.scrollHeight / pageHeight);
+        document.body.style.minHeight = `${count * pageHeight - 2}px`;
+        return count;
+      },
+      { pageHeight: A4_HEIGHT_PX / SCALE, gap: PAGE_GAP_PX }
     );
 
     await page.pdf({
       path: outFile,
-      width: `${WIDTH}px`,
-      height: `${height + 1}px`,
+      format: "A4",
+      scale: SCALE,
+      margin: { top: 0, right: 0, bottom: 0, left: 0 },
       printBackground: true,
-      pageRanges: "1",
     });
-    console.log(`✓ ${outFile} (${Date.now() - started}ms)`);
+    console.log(`✓ ${outFile} (${pages} pages, ${Date.now() - started}ms)`);
   } catch (err) {
     console.error(`✗ ${file} failed:`, err.message);
   } finally {
