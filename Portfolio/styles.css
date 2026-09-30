@@ -174,11 +174,9 @@ body {
   position: absolute;
 }
 .user-circle img {
-  height: 110%;
-  width: auto;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
-  margin-bottom: 100px;
-  object-position: -10px -10px;
 }
 .moon {
   width: 40%;
@@ -252,7 +250,7 @@ body {
 /* PAGE */
 #page-cols {
   margin-top: 58px;
-  height: 1550px;
+  padding-bottom: 60px;
   /* background-color: whitesmoke; */
   display: flex;
 }
@@ -340,9 +338,6 @@ li {
 #flp {
   margin-right: 9%;
 }
-#contact {
-  height: 19.3%;
-}
 
 /* #work {
   height: 43%;
@@ -364,36 +359,16 @@ li {
 
 .date-box {
   display: flex;
+  flex-shrink: 0;
+  border: 1px solid rgba(99, 139, 177, 0.486);
   border-radius: 5px;
-  padding: 2px;
+  padding: 2px 6px;
   align-items: center;
-}
-#JDE,
-#raven,
-#soc,
-#bham,
-#stas {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-#JDE {
-  border: 1px solid rgba(99, 139, 177, 0.486);
-}
-#raven {
-  border: 1px solid rgba(99, 139, 177, 0.486);
-}
-#soc {
-  border: 1px solid rgba(99, 139, 177, 0.486);
-}
-#bham {
-  border: 1px solid rgba(99, 139, 177, 0.486);
-}
-#stas {
-  border: 1px solid rgba(99, 139, 177, 0.486);
 }
 .city-container h5 {
   margin: 0;
   font-weight: 500;
+  white-space: nowrap;
 }
 .city-container h4 {
   margin: 0;
@@ -443,23 +418,21 @@ li {
 }
 /* ROCKET */
 #rocket-div {
-  transform: translateY(-50px);
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 9%;
 }
 #rocket {
-  transform: scaleX(-1);
-  margin-left: 80%;
-  width: 40%;
-  z-index: 0;
-  position: absolute;
-  bottom: 0px;
-  right: -0px;
+  width: min(75%, 380px);
 }
 /* CONTACT */
 .contact {
   display: flex;
-  width: 50%;
-  height: 15.5%;
-  margin-left: 1.5%;
+  width: 100%;
+  height: 50px;
   align-items: center;
 }
 .contact p {
@@ -506,10 +479,25 @@ li {
 .single-before li:nth-child(3)::before {
   content: "🎮 ";
 }
-li span {
-  position: relative;
-  left: 12px;
-  max-width: 90%;
+.section p + p {
+  margin-top: 10px;
+}
+.section .plain-list {
+  list-style: none;
+  padding-left: 0;
+}
+.roles {
+  margin: 6px 0 2px;
+  font-size: 14px;
+  color: #3a4466;
+}
+.roles b,
+.single-before2 b {
+  font-weight: 600;
+  color: #000308;
+}
+.mt-list {
+  margin-top: 16px;
 }
 
 /* PROGRESS BARS */
@@ -588,6 +576,11 @@ li span {
   .bg {
     background-repeat: round;
     height: 250%;
+  }
+  #rocket-div {
+    flex: none;
+    margin: 0 auto;
+    width: 80vw;
   }
 }
 @media only screen and (max-width: 500px) {

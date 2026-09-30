@@ -20,7 +20,6 @@ h6 {
 
 html,
 body {
-  height: 100%;
   margin: 0;
 }
 
@@ -66,32 +65,39 @@ body {
   position: relative;
   z-index: 1;
 }
+/* Moon surface: a lunar grey gradient (a hint of blue under the space header,
+   darker toward the bottom) with a few soft craters. Kept subtle so text stays
+   readable on screen and in the PDF. */
 .bg {
-  /* background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/moon-texture-massimo-pietrobon.jpg); */
-  background-repeat: round;
-  background-size: cover;
-  background-color: #000;
   position: absolute;
   z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.08;
-  filter: invert(100%);
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  background:
+    radial-gradient(circle 150px at 6% 34%, rgba(70, 74, 90, 0.1), transparent 70%),
+    radial-gradient(circle 70px at 3% 36%, rgba(255, 255, 255, 0.35), transparent 70%),
+    radial-gradient(circle 110px at 96% 22%, rgba(70, 74, 90, 0.09), transparent 70%),
+    radial-gradient(circle 220px at 50% 58%, rgba(70, 74, 90, 0.07), transparent 70%),
+    radial-gradient(circle 90px at 97% 52%, rgba(70, 74, 90, 0.1), transparent 70%),
+    radial-gradient(circle 180px at 8% 80%, rgba(70, 74, 90, 0.08), transparent 70%),
+    radial-gradient(circle 260px at 88% 94%, rgba(70, 74, 90, 0.1), transparent 70%),
+    linear-gradient(180deg, #c6ccd8 0%, #dfe0e4 16%, #e2e2e4 45%, #d6d6d9 80%, #c9c9cd 100%);
 }
 .backboard {
   height: 400px;
   width: auto;
-  background-size: cover;
-  background-image: url("./spaceimage.png");
-  z-index: 5;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+.backboard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-image: url("./spaceimage.png");
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 95%, 0% 100%);
 }
 
@@ -105,7 +111,7 @@ body {
 .heading-box {
   display: flex;
   flex-direction: column;
-  transform: translateY(50px);
+  margin-bottom: -50px;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 .heading-box.left {
@@ -147,11 +153,9 @@ body {
 }
 
 .user-circle img {
-  height: 110%;
-  width: auto;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
-  margin-bottom: 100px;
-  object-position: -8px -10px;
 }
 .moon {
   width: 40%;
@@ -166,7 +170,7 @@ body {
 /* PAGE */
 #page-cols {
   margin-top: 58px;
-  height: 1550px;
+  padding-bottom: 60px;
   /* background-color: whitesmoke; */
   display: flex;
 }
@@ -183,6 +187,9 @@ body {
 }
 .section h4 {
   font-weight: 300;
+}
+.section p + p {
+  margin-top: 10px;
 }
 .section p,
 li {
@@ -254,9 +261,6 @@ li {
 #flp {
   margin-right: 9%;
 }
-#contact {
-  height: 200px;
-}
 
 /* #work {
   height: 43%;
@@ -278,36 +282,16 @@ li {
 
 .date-box {
   display: flex;
+  flex-shrink: 0;
+  border: 1px solid rgba(99, 139, 177, 0.486);
   border-radius: 5px;
-  padding: 2px;
+  padding: 2px 6px;
   align-items: center;
-}
-#JDE,
-#raven,
-#soc,
-#bham,
-#stas {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-#JDE {
-  border: 1px solid rgba(99, 139, 177, 0.486);
-}
-#raven {
-  border: 1px solid rgba(99, 139, 177, 0.486);
-}
-#soc {
-  border: 1px solid rgba(99, 139, 177, 0.486);
-}
-#bham {
-  border: 1px solid rgba(99, 139, 177, 0.486);
-}
-#stas {
-  border: 1px solid rgba(99, 139, 177, 0.486);
 }
 .city-container h5 {
   margin: 0;
   font-weight: 500;
+  white-space: nowrap;
 }
 .city-container h4 {
   margin: 0;
@@ -357,23 +341,21 @@ li {
 }
 /* ROCKET */
 #rocket-div {
-  transform: translateY(150px);
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 9%;
 }
 #rocket {
-  transform: scaleX(-1);
-  margin-left: 80%;
-  width: 40%;
-  z-index: 0;
-  position: absolute;
-  bottom: 0px;
-  right: -0px;
+  width: min(85%, 480px);
 }
 /* CONTACT */
 .contact {
   display: flex;
   width: 50%;
   height: 50px;
-  margin-left: 1.5%;
   align-items: center;
 }
 .contact p {
@@ -420,10 +402,18 @@ li {
 .single-before li:nth-child(3)::before {
   content: "🎮 ";
 }
-li span {
-  position: relative;
-  left: 12px;
-  max-width: 90%;
+/* SKILL GROUPS / INTERESTS */
+.section .plain-list {
+  list-style: none;
+  padding-left: 0;
+}
+.plain-list b {
+  font-weight: 600;
+  color: #000308;
+}
+.tag {
+  font-size: 13px;
+  color: #3a4466;
 }
 
 /* PROGRESS BARS */
@@ -475,4 +465,17 @@ li span {
   /* body {
     background-color: lightblue;
   } */
+}
+.mt-list {
+  margin-top: 16px;
+}
+.roles {
+  margin: 6px 0 2px;
+  font-size: 14px;
+  color: #3a4466;
+}
+.roles b,
+.single-before2 b {
+  font-weight: 600;
+  color: #000308;
 }

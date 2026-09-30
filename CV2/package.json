@@ -1,0 +1,12 @@
+{
+  "name": "cv",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pdf": "node scripts/pdf.js",
+    "pdf:watch": "node scripts/pdf.js --watch"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}
